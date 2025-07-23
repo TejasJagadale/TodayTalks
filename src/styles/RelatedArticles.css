@@ -1,0 +1,18 @@
+.related-articles {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--light-gray);
+}
+
+.related-articles h3 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}

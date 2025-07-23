@@ -1,0 +1,76 @@
+.newsletter-signup {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.newsletter-signup h3 {
+  font-family: var(--font-heading);
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.newsletter-signup p {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.newsletter-signup form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.newsletter-signup input {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.newsletter-signup button {
+  padding: 0.8rem;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.newsletter-signup button:hover {
+  background-color: #c0392b;
+}
+
+.privacy-note {
+  font-size: 0.7rem;
+  opacity: 0.7;
+  margin-top: 0.5rem;
+}
+
+.success-message {
+  text-align: center;
+}
+
+.success-message p {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.success-message button {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.success-message button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}

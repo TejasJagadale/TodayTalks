@@ -1,0 +1,110 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "AI Breakthrough: New Model Surpasses Human Performance",
+      "summary": "Researchers develop an AI system that outperforms humans in complex reasoning tasks",
+      "content": "In a landmark achievement for artificial intelligence, researchers at DeepMind have created a new model called Gemini Ultra that has surpassed human performance on a wide range of cognitive tasks. The system demonstrates advanced reasoning, problem-solving, and creative abilities that were previously thought to be uniquely human. Early tests show the model scoring in the top 10% of humans on standardized tests for reasoning, mathematics, and creative writing. Experts say this breakthrough could revolutionize fields from education to scientific research, though ethical concerns remain about the technology's potential misuse.",
+      "category": "technology",
+      "date": "2023-05-15",
+      "author": "John Doe",
+      "imageUrl": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485",
+      "featured": true,
+      "readTime": "4 min read",
+      "tags": ["AI", "Machine Learning", "Innovation"],
+      "views": 12453,
+      "comments": 342
+    },
+    {
+      "id": 2,
+      "title": "Global Markets Rally as Inflation Fears Ease",
+      "summary": "Stock markets worldwide surge after positive economic indicators suggest inflation may be peaking",
+      "content": "Financial markets experienced their best day in months as new data showed inflation might be slowing faster than expected. The S&P 500 jumped 2.8%, while tech-heavy Nasdaq surged 3.5% as investors regained appetite for risk. Central bank officials hinted that the aggressive rate hike cycle may be nearing its end, providing further fuel for the rally. 'This could mark a turning point,' said chief economist Jane Smith. 'While we're not out of the woods yet, the worst-case scenarios seem increasingly unlikely.' Analysts caution that volatility may continue as markets digest upcoming earnings reports and employment data.",
+      "category": "business",
+      "date": "2023-05-14",
+      "author": "Jane Smith",
+      "imageUrl": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3",
+      "featured": true,
+      "readTime": "3 min read",
+      "tags": ["Markets", "Economy", "Finance"],
+      "views": 8765,
+      "comments": 128
+    },
+    {
+      "id": 3,
+      "title": "Climate Summit Ends With Historic Agreement",
+      "summary": "World leaders commit to unprecedented emissions reductions by 2030",
+      "content": "After two weeks of intense negotiations, delegates from nearly 200 countries reached a landmark agreement to accelerate emissions cuts and phase out fossil fuels. The pact includes commitments to triple renewable energy capacity and double energy efficiency improvements by 2030. Developing nations secured increased funding for climate adaptation, though some activists say the measures don't go far enough. 'This is a turning point, but much work remains,' said the UN climate chief. The agreement comes as new data shows 2023 is on track to be the hottest year on record, with devastating floods, wildfires, and storms affecting millions worldwide.",
+      "category": "environment",
+      "date": "2023-05-13",
+      "author": "Maria Garcia",
+      "imageUrl": "https://images.unsplash.com/photo-1617791160536-598cf32026fb",
+      "featured": true,
+      "readTime": "5 min read",
+      "tags": ["Climate", "Policy", "Sustainability"],
+      "views": 15342,
+      "comments": 421
+    },
+    {
+      "id": 4,
+      "title": "New Study Reveals Benefits of Mediterranean Diet",
+      "summary": "Research confirms significant health improvements for adherents to Mediterranean eating patterns",
+      "content": "A comprehensive 10-year study published in the New England Journal of Medicine provides the strongest evidence yet for the benefits of the Mediterranean diet. Participants who closely followed the diet rich in olive oil, nuts, fish, and vegetables showed 30% lower rates of heart disease and a 23% reduction in premature death from all causes. 'The results are striking in their consistency,' said lead researcher Dr. Ahmed. The study also found cognitive benefits, with adherents showing slower mental decline. Nutritionists say the findings underscore the importance of dietary patterns rather than focusing on individual nutrients or fad diets.",
+      "category": "health",
+      "date": "2023-05-12",
+      "author": "David Chen",
+      "imageUrl": "https://images.unsplash.com/photo-1490645935967-10de6ba17061",
+      "featured": false,
+      "readTime": "4 min read",
+      "tags": ["Nutrition", "Wellness", "Research"],
+      "views": 6543,
+      "comments": 87
+    },
+    {
+      "id": 5,
+      "title": "Streaming Wars Intensify With New Service Launches",
+      "summary": "Major media companies unveil competing platforms in crowded streaming market",
+      "content": "The battle for streaming dominance entered a new phase this week as three major media companies launched services within days of each other. With over 200 streaming options now available, analysts question whether the market has reached saturation. 'Consumers are suffering from subscription fatigue,' said media analyst Lisa Wong. The new entrants are betting on exclusive content and lower prices to gain market share from established players. Meanwhile, password-sharing crackdowns and price increases at Netflix have led to subscriber losses, signaling a potential industry shakeout. Experts predict consolidation may be inevitable as companies struggle to achieve profitability in the increasingly competitive space.",
+      "category": "entertainment",
+      "date": "2023-05-11",
+      "author": "Lisa Wong",
+      "imageUrl": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba",
+      "featured": false,
+      "readTime": "3 min read",
+      "tags": ["Streaming", "Media", "Technology"],
+      "views": 5432,
+      "comments": 65
+    },
+    {
+      "id": 6,
+      "title": "Breakthrough in Quantum Computing Announced",
+      "summary": "Scientists achieve quantum supremacy with new 256-qubit processor",
+      "content": "A team of physicists at MIT and IBM has demonstrated a quantum computer that can solve in minutes problems that would take conventional supercomputers thousands of years. The new 256-qubit processor represents a major leap forward in the field, achieving what researchers call 'quantum supremacy' for practical applications. Potential uses include drug discovery, materials science, and cryptography. 'This changes everything,' said lead researcher Dr. Singh. 'We're now entering the era where quantum computers can tackle real-world problems.' The breakthrough comes amid intense global competition in quantum technology, with governments and corporations investing billions to secure an advantage in what many see as the next computing revolution.",
+      "category": "technology",
+      "date": "2023-05-10",
+      "author": "Raj Patel",
+      "imageUrl": "https://images.unsplash.com/photo-1629909613654-28e377c37b09",
+      "featured": false,
+      "readTime": "5 min read",
+      "tags": ["Quantum", "Computing", "Innovation"],
+      "views": 9876,
+      "comments": 156
+    }
+  ],
+  "categories": [
+    {"id": 1, "name": "technology", "displayName": "Technology"},
+    {"id": 2, "name": "business", "displayName": "Business"},
+    {"id": 3, "name": "environment", "displayName": "Environment"},
+    {"id": 4, "name": "health", "displayName": "Health"},
+    {"id": 5, "name": "entertainment", "displayName": "Entertainment"},
+    {"id": 6, "name": "politics", "displayName": "Politics"},
+    {"id": 7, "name": "sports", "displayName": "Sports"}
+  ],
+  "trendingTags": [
+    {"name": "AI", "count": 24},
+    {"name": "Markets", "count": 18},
+    {"name": "Climate", "count": 15},
+    {"name": "Health", "count": 12},
+    {"name": "Streaming", "count": 10}
+  ]
+}
