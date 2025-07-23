@@ -9,6 +9,8 @@ body {
 }
 
 .container {
+  display: flex;
+  justify-content: space-between;
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
@@ -286,6 +288,7 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+    flex-direction: column;
   }
   .article-page {
     grid-template-columns: 1fr;

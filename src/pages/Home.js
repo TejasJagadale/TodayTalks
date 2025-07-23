@@ -127,7 +127,14 @@ const Home = () => {
 
           <ArticleDetail />
 
-          <AdSenseAd slotId="0987654321" format="rectangle" />
+          {/* <AdSenseAd slotId="0987654321" format="rectangle" /> */}
+          <AdSenseAd
+            slotId="3581145953"
+            format="Display"
+            layoutKey="" // For matched content ads
+            testMode={false} // For AdSense sandbox testing
+            timeout={2000} // Timeout before showing fallback
+          />
         </aside>
       </main>
     </div>
