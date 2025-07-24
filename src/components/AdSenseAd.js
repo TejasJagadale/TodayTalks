@@ -6,26 +6,21 @@ const AdSenseAd = ({
   format = "auto",
   layoutKey = "",
   testMode = false,
-  timeout = 2000
+  timeout = 5000 // Increased timeout
 }) => {
   const [adFailed, setAdFailed] = useState(false);
-  const [loaded, setLoaded] = useState(false);
+  const [scriptLoaded, setScriptLoaded] = useState(false);
 
   useEffect(() => {
-    // Load the AdSense script
-    const script = document.createElement('script');
-    script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1915488793968759';
-    script.async = true;
-    script.crossOrigin = "anonymous";
-    document.head.appendChild(script);
+    if (testMode || scriptLoaded) return;
 
     let timer;
+    let script;
 
     const loadAd = () => {
       try {
-        if (window.adsbygoogle && !loaded) {
+        if (window.adsbygoogle) {
           (window.adsbygoogle = window.adsbygoogle || []).push({});
-          setLoaded(true);
         }
       } catch (e) {
         console.error("AdSense error:", e);
@@ -33,26 +28,36 @@ const AdSenseAd = ({
       }
     };
 
-    if (!testMode) {
-      timer = setTimeout(() => {
-        setAdFailed(true);
-      }, timeout);
-
+    if (!window.adsbygoogle) {
+      script = document.createElement('script');
+      script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1915488793968759';
+      script.async = true;
+      script.crossOrigin = "anonymous";
+      script.onload = () => {
+        setScriptLoaded(true);
+        loadAd();
+      };
+      document.head.appendChild(script);
+    } else {
       loadAd();
     }
 
+    timer = setTimeout(() => {
+      setAdFailed(true);
+    }, timeout);
+
     return () => {
       clearTimeout(timer);
-      // Clean up the script when component unmounts
-      document.head.removeChild(script);
-      // Reset loaded state when slotId changes
-      setLoaded(false);
+      if (script) {
+        document.head.removeChild(script);
+      }
     };
-  }, [testMode, timeout, slotId, loaded]);
+  }, [testMode, timeout, slotId, scriptLoaded]);
 
   const getAdStyle = () => {
     const styles = {
-      display: "block"
+      display: "block",
+      overflow: "hidden" // Added to prevent layout shifts
     };
 
     if (format === "horizontal") {
@@ -84,6 +89,7 @@ const AdSenseAd = ({
           data-ad-client="ca-pub-1915488793968759"
           data-ad-slot={slotId}
           data-ad-format={format}
+          data-ad-layout-key={layoutKey}
           data-full-width-responsive="true"
         ></ins>
       ) : (
