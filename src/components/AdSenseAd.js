@@ -12,6 +12,13 @@ const AdSenseAd = ({
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
+    // Load the AdSense script
+    const script = document.createElement('script');
+    script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1915488793968759';
+    script.async = true;
+    script.crossOrigin = "anonymous";
+    document.head.appendChild(script);
+
     let timer;
 
     const loadAd = () => {
@@ -36,6 +43,8 @@ const AdSenseAd = ({
 
     return () => {
       clearTimeout(timer);
+      // Clean up the script when component unmounts
+      document.head.removeChild(script);
       // Reset loaded state when slotId changes
       setLoaded(false);
     };
@@ -76,8 +85,7 @@ const AdSenseAd = ({
           data-ad-slot={slotId}
           data-ad-format={format}
           data-full-width-responsive="true"
-          data-ad-layout-key={layoutKey}
-        />
+        ></ins>
       ) : (
         <div className={`ad-fallback ${format}`}>
           <p>Advertisement</p>
