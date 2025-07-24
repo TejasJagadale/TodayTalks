@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { format } from 'date-fns';
-// import CommentsSection from "../components/CommentsSection";
+import { format } from "date-fns";
 import RelatedArticles from "../components/RelatedArticles";
-import "../styles/ArticleDetail.css"
+import "../styles/ArticleDetail.css";
 
 const ArticleDetail = () => {
-  const { id } = useParams();
+  // const { id } = useParams();
+  const id = "6"
   const [article, setArticle] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -16,8 +16,13 @@ const ArticleDetail = () => {
       try {
         const response = await fetch("/data/news.json");
         const data = await response.json();
-        const foundArticle = data.articles.find(art => art.id === parseInt(id));
-        
+        // console.log(data.articles);
+
+        const foundArticle = data.articles.find(
+          (articles) => articles.id === parseInt(id)
+        );
+        // console.log(foundArticle);
+
         if (foundArticle) {
           setArticle(foundArticle);
         } else {
@@ -45,14 +50,16 @@ const ArticleDetail = () => {
     return <div className="not-found">Article not found</div>;
   }
 
-  const formattedDate = format(new Date(article.date), 'MMMM d, yyyy');
+  const formattedDate = format(new Date(article.date), "MMMM d, yyyy");
 
   return (
     <div className="article-detail">
       <article>
         <header className="article-header">
           <div className="breadcrumbs">
-            <a href="/">Home</a> &gt; <a href={`/category/${article.category}`}>{article.category}</a> &gt; {article.title}
+            <a href="/">Home</a> &gt;{" "}
+            <a href={`/category/${article.category}`}>{article.category}</a>{" "}
+            &gt; {article.title}
           </div>
           <h1>{article.title}</h1>
           <div className="article-meta">
@@ -62,12 +69,16 @@ const ArticleDetail = () => {
             </div>
             <div className="article-stats">
               <span className="read-time">{article.readTime}</span>
-              <span className="views">{article.views.toLocaleString()} views</span>
+              <span className="views">
+                {article.views.toLocaleString()} views
+              </span>
             </div>
           </div>
           <div className="article-tags">
             {article.tags.map((tag, index) => (
-              <a key={index} href={`/tag/${tag}`} className="tag">{tag}</a>
+              <a key={index} href={`/tag/${tag}`} className="tag">
+                {tag}
+              </a>
             ))}
           </div>
         </header>
@@ -78,8 +89,8 @@ const ArticleDetail = () => {
 
         <div className="article-content">
           <p className="lead">{article.summary}</p>
-          
-          {article.content.split('\n').map((paragraph, index) => (
+
+          {article.content.split("\n").map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
           ))}
         </div>
@@ -87,13 +98,31 @@ const ArticleDetail = () => {
         <footer className="article-footer">
           <div className="engagement-buttons">
             <button className="like-button">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
                 <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
               </svg>
               Like
             </button>
             <button className="share-button">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
                 <circle cx="18" cy="5" r="3"></circle>
                 <circle cx="6" cy="12" r="3"></circle>
                 <circle cx="18" cy="19" r="3"></circle>
@@ -106,7 +135,10 @@ const ArticleDetail = () => {
         </footer>
       </article>
 
-      <RelatedArticles currentArticleId={article.id} category={article.category} />
+      <RelatedArticles
+        currentArticleId={article.id}
+        category={article.category}
+      />
       {/* <CommentsSection articleId={article.id} /> */}
     </div>
   );

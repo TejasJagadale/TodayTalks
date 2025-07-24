@@ -12,7 +12,7 @@ const Article = () => {
     fetch('/data/news.json')
       .then(response => response.json())
       .then(data => {
-        const foundArticle = data.articles.find(a => a.id === parseInt(id));
+        const foundArticle = data.articles;
         setArticle(foundArticle);
         
         // Get related articles (same category)

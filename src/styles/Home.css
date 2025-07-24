@@ -218,10 +218,11 @@ a {
 }
 
 .popular-item {
-  display: grid;
-  grid-template-columns: 30px 1fr;
-  grid-template-rows: auto auto;
   gap: 0.3rem;
+  align-items: center;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -229,7 +230,7 @@ a {
   grid-row: span 2;
   background-color: var(--primary-color);
   color: white;
-  width: 25px;
+  width: 35px;
   height: 25px;
   border-radius: 50%;
   display: flex;
@@ -355,12 +356,12 @@ a {
   }
 
   .popular-item {
-    /* grid-template-columns: 25px 1fr; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 20px;
+    gap: 10px;
+    height: 80px;
   }
 
   .popular-rank {

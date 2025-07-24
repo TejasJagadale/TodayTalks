@@ -13,11 +13,11 @@ const NewsCard = ({ article, featured = false }) => {
         <div className="category-tag">{article.category}</div>
       </div>
       <div className="card-content">
-        <div className="card-meta">
+        {/* <div className="card-meta">
           <span className="author">{article.author}</span>
           <span className="date">{formattedDate}</span>
           <span className="read-time">{article.readTime}</span>
-        </div>
+        </div> */}
         <h3 className="card-title">{article.title}</h3>
         <p className="card-summary">{article.summary}</p>
         <div className="card-footer">
@@ -26,10 +26,10 @@ const NewsCard = ({ article, featured = false }) => {
               <span key={index} className="tag">{tag}</span>
             ))}
           </div>
-          <div className="engagement">
+          {/* <div className="engagement">
             <span className="views">{article.views.toLocaleString()} views</span>
             <span className="comments">{article.comments} comments</span>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

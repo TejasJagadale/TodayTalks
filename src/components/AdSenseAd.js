@@ -1,45 +1,60 @@
 import React, { useEffect, useState } from "react";
 import "../styles/AdSenseAd.css";
 
-const AdSenseAd = ({ 
-  slotId, 
-  format = "rectangle", 
+const AdSenseAd = ({
+  slotId = "3581145953",
+  format = "auto",
   layoutKey = "",
-  testMode = false,
+  testMode = true,
   timeout = 2000
 }) => {
   const [adFailed, setAdFailed] = useState(false);
+  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
     let timer;
-    
-    if (!testMode) {
-      // Load AdSense script if not already loaded
-      if (!window.adsbygoogle) {
-        const script = document.createElement('script');
-        script.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID`;
-        script.async = true;
-        script.crossOrigin = "anonymous";
-        document.head.appendChild(script);
-      }
 
+    const loadAd = () => {
+      try {
+        if (window.adsbygoogle && !loaded) {
+          (window.adsbygoogle = window.adsbygoogle || []).push({});
+          setLoaded(true);
+        }
+      } catch (e) {
+        console.error("AdSense error:", e);
+        setAdFailed(true);
+      }
+    };
+
+    if (!testMode) {
       timer = setTimeout(() => {
         setAdFailed(true);
       }, timeout);
+
+      loadAd();
     }
 
-    return () => clearTimeout(timer);
-  }, [testMode, timeout]);
-
-  const getAdFormat = () => {
-    const formats = {
-      rectangle: "rectangle",
-      leaderboard: "horizontal",
-      banner: "auto",
-      vertical: "vertical",
-      fluid: "fluid"
+    return () => {
+      clearTimeout(timer);
+      // Reset loaded state when slotId changes
+      setLoaded(false);
     };
-    return formats[format] || "auto";
+  }, [testMode, timeout, slotId, loaded]);
+
+  const getAdStyle = () => {
+    const styles = {
+      display: "block"
+    };
+
+    if (format === "horizontal") {
+      styles.width = "100%";
+      styles.height = "90px";
+    } else if (format === "rectangle") {
+      styles.width = "300px";
+      styles.height = "250px";
+    }
+
+    return styles;
   };
 
   if (testMode) {
@@ -56,19 +71,18 @@ const AdSenseAd = ({
       {!adFailed ? (
         <ins
           className="adsbygoogle"
-          style={{ display: 'block' }}
-          data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
+          style={getAdStyle()}
+          data-ad-client="ca-pub-1915488793968759"
           data-ad-slot={slotId}
-          data-ad-format={getAdFormat()}
+          data-ad-format={format}
           data-full-width-responsive="true"
           data-ad-layout-key={layoutKey}
         />
       ) : (
         <div className={`ad-fallback ${format}`}>
-          <p>Advertisement ({format})</p>
+          <p>Advertisement</p>
         </div>
       )}
-      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
   );
 };

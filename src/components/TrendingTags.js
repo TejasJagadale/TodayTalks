@@ -8,7 +8,8 @@ const TrendingTags = ({ tags }) => {
       <div className="tags-container">
         {tags.map((tag, index) => (
           <a key={index} href={`/tag/${tag.name}`} className="tag">
-            {tag.name} <span className="tag-count">{tag.count}</span>
+            {tag.name} 
+            {/* <span className="tag-count">{tag.count}</span> */}
           </a>
         ))}
       </div>

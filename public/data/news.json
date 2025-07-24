@@ -11,7 +11,11 @@
       "imageUrl": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485",
       "featured": true,
       "readTime": "4 min read",
-      "tags": ["AI", "Machine Learning", "Innovation"],
+      "tags": [
+        "AI",
+        "Machine Learning",
+        "Innovation"
+      ],
       "views": 12453,
       "comments": 342
     },
@@ -26,7 +30,11 @@
       "imageUrl": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3",
       "featured": true,
       "readTime": "3 min read",
-      "tags": ["Markets", "Economy", "Finance"],
+      "tags": [
+        "Markets",
+        "Economy",
+        "Finance"
+      ],
       "views": 8765,
       "comments": 128
     },
@@ -41,7 +49,11 @@
       "imageUrl": "https://images.unsplash.com/photo-1617791160536-598cf32026fb",
       "featured": true,
       "readTime": "5 min read",
-      "tags": ["Climate", "Policy", "Sustainability"],
+      "tags": [
+        "Climate",
+        "Policy",
+        "Sustainability"
+      ],
       "views": 15342,
       "comments": 421
     },
@@ -54,9 +66,13 @@
       "date": "2023-05-12",
       "author": "David Chen",
       "imageUrl": "https://images.unsplash.com/photo-1490645935967-10de6ba17061",
-      "featured": false,
+      "featured": true,
       "readTime": "4 min read",
-      "tags": ["Nutrition", "Wellness", "Research"],
+      "tags": [
+        "Nutrition",
+        "Wellness",
+        "Research"
+      ],
       "views": 6543,
       "comments": 87
     },
@@ -69,9 +85,13 @@
       "date": "2023-05-11",
       "author": "Lisa Wong",
       "imageUrl": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba",
-      "featured": false,
+      "featured": true,
       "readTime": "3 min read",
-      "tags": ["Streaming", "Media", "Technology"],
+      "tags": [
+        "Streaming",
+        "Media",
+        "Technology"
+      ],
       "views": 5432,
       "comments": 65
     },
@@ -84,27 +104,437 @@
       "date": "2023-05-10",
       "author": "Raj Patel",
       "imageUrl": "https://images.unsplash.com/photo-1629909613654-28e377c37b09",
-      "featured": false,
+      "featured": true,
       "readTime": "5 min read",
-      "tags": ["Quantum", "Computing", "Innovation"],
+      "tags": [
+        "Quantum",
+        "Computing",
+        "Innovation"
+      ],
       "views": 9876,
       "comments": 156
+    },
+    {
+      "id": 7,
+      "title": "Neuralink Receives FDA Approval for Human Trials",
+      "summary": "Elon Musk's brain-chip startup clears regulatory hurdle for first human implants",
+      "content": "Neuralink has secured FDA approval to begin clinical trials of its brain-computer interface in humans, marking a major milestone for the controversial startup. The first trial will involve implanting the coin-sized device in patients with paralysis to enable direct brain control of computers. 'This could restore independence for millions,' said neuroscientist Dr. Priya Kumar. The approval comes after years of animal testing and addresses previous safety concerns. Ethical debates continue about the technology's long-term implications, with some experts warning about potential misuse for cognitive enhancement. If successful, Neuralink aims to expand applications to treat neurological conditions like Parkinson's and Alzheimer's by 2030.",
+      "category": "technology",
+      "date": "2023-04-30",
+      "author": "Olivia Chen",
+      "imageUrl": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb",
+      "featured": true,
+      "readTime": "5 min read",
+      "tags": [
+        "Neuroscience",
+        "Innovation",
+        "Biotech"
+      ],
+      "views": 18765,
+      "comments": 498
+    },
+    {
+      "id": 8,
+      "title": "Vertical Farming Goes Mainstream in Urban Centers",
+      "summary": "Skyscraper agriculture slashes water use while boosting yields 20-fold",
+      "content": "Once considered futuristic, vertical farms are now supplying 15% of leafy greens in major cities like New York and Singapore. These climate-controlled towers use 95% less water than traditional farms while producing crops year-round. 'We've achieved 30 harvests annually versus 3-4 in fields,' said AeroFarms CEO David Rosenberg. The sector attracted $3 billion in investment last year as food security concerns grow. Challenges remain in scaling beyond greens to staple crops, but new LED lighting and robotics advancements suggest the technology could soon compete with corn and wheat production. Urban planners are incorporating farms into building codes, envisioning 'self-feeding cities' by 2040.",
+      "category": "environment",
+      "date": "2023-04-29",
+      "author": "Ethan Wong",
+      "imageUrl": "https://images.unsplash.com/photo-1590333748338-d629e4564ad9",
+      "featured": true,
+      "readTime": "4 min read",
+      "tags": [
+        "Agriculture",
+        "Sustainability",
+        "Urban Planning"
+      ],
+      "views": 8765,
+      "comments": 132
+    },
+    {
+      "id": 9,
+      "title": "James Webb Telescope Discovers Potential Life Signs on Exoplanet",
+      "summary": "K2-18b's atmosphere shows molecules only produced by living organisms on Earth",
+      "content": "In a discovery that could redefine humanity's place in the universe, the James Webb Space Telescope detected dimethyl sulfide (DMS) in the atmosphere of ocean-covered exoplanet K2-18b. On Earth, this compound is exclusively produced by phytoplankton. 'We've never seen this biosignature beyond our planet,' said NASA astrophysicist Dr. Rebecca Carter. The super-Earth, 120 light-years away, orbits in its star's habitable zone with temperatures that could support liquid water. While cautioning that abiotic processes can't be ruled out, scientists are planning urgent follow-up observations. If confirmed, this would represent the strongest evidence yet for extraterrestrial life in our galactic neighborhood.",
+      "category": "science",
+      "date": "2023-04-28",
+      "author": "Neil Robertson",
+      "imageUrl": "https://images.unsplash.com/photo-1657299156538-e08595a23039",
+      "featured": true,
+      "readTime": "6 min read",
+      "tags": [
+        "Astronomy",
+        "Space",
+        "Discovery"
+      ],
+      "views": 25432,
+      "comments": 876
+    },
+    {
+      "id": 10,
+      "title": "CRISPR Used to Cure Genetic Disorder In Utero",
+      "summary": "Groundbreaking treatment corrects sickle cell disease before birth",
+      "content": "Doctors at Boston Children's Hospital successfully used CRISPR gene-editing to cure sickle cell disease in a fetus, marking the first in utero application of the technology. The treatment targeted the defective HBB gene at 16 weeks gestation, with the now-healthy baby born in March. 'This prevents organ damage that begins in the womb,' said lead physician Dr. Amina Diallo. Unlike adult CRISPR therapies requiring harsh bone marrow transplants, the fetal approach edits stem cells more efficiently. Ethical concerns persist about germline editing, though researchers note these changes aren't heritable. The breakthrough opens possibilities for treating hundreds of genetic conditions during pregnancy, with trials planned for cystic fibrosis and muscular dystrophy.",
+      "category": "health",
+      "date": "2023-04-27",
+      "author": "Sophie Martin",
+      "imageUrl": "https://images.unsplash.com/photo-1579684453423-f84349ef60b0",
+      "featured": true,
+      "readTime": "5 min read",
+      "tags": [
+        "Genetics",
+        "Pediatrics",
+        "Biotech"
+      ],
+      "views": 19876,
+      "comments": 543
+    },
+    {
+      "id": 11,
+      "title": "Major Sports League Adopt AI Referees",
+      "summary": "Computer vision systems to call balls/strikes and offsides with 99.9% accuracy",
+      "content": "The NBA, NFL, and MLB will implement AI officiating systems starting next season after successful tests showed near-perfect accuracy. The systems use arrays of high-speed cameras and neural networks trained on millions of plays. 'This eliminates human error in critical calls,' said MLB Commissioner Rob Manfred. While human referees remain for judgment calls, the AI handles definitive rulings like baseball's strike zone or soccer's offside. Traditionalists protest the loss of 'human element,' but players overwhelmingly support the change after controversial calls affected championship outcomes. The technology could expand to amateur sports as costs decrease, with startups offering AI refs for high school games by 2025.",
+      "category": "sports",
+      "date": "2023-04-26",
+      "author": "Jamal Williams",
+      "imageUrl": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e",
+      "featured": true,
+      "readTime": "4 min read",
+      "tags": [
+        "AI",
+        "Technology",
+        "Innovation"
+      ],
+      "views": 14321,
+      "comments": 387
+    },
+    {
+      "id": 12,
+      "title": "Global Literacy Rate Reaches 90% for First Time",
+      "summary": "UNESCO reports unprecedented gains in education access worldwide",
+      "content": "Humanity has crossed a historic threshold with 90% of adults now possessing basic literacy skills, up from 12% in 1820. The achievement reflects decades of investment in global education initiatives and digital learning tools. 'Mobile apps reached populations traditional schools couldn't,' said UNESCO director Audrey Azoulay. Sub-Saharan Africa showed the most dramatic improvement, doubling literacy rates since 2000 through community-led programs. Challenges remain for the 773 million still illiterate, mostly in conflict zones. Economists predict the milestone could boost global GDP by $3 trillion annually as more workers enter skilled labor markets. The next goal is universal literacy by 2030, requiring renewed focus on marginalized groups.",
+      "category": "education",
+      "date": "2023-04-25",
+      "author": "Fatima Nkosi",
+      "imageUrl": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1",
+      "featured": true,
+      "readTime": "3 min read",
+      "tags": [
+        "Global Development",
+        "Statistics",
+        "Progress"
+      ],
+      "views": 7654,
+      "comments": 98
+    },
+    {
+      "id": 13,
+      "title": "Robotic Chefs Now Prepare Meals at 100+ Restaurants",
+      "summary": "Automated kitchens cut food costs 30% while maintaining Michelin-star quality",
+      "content": "From burger-flipping bots to sushi-making arms, restaurant automation has reached an inflection point with chains like Chipotle and Panera deploying robotic kitchens. The systems, powered by AI and precise sensors, replicate recipes with perfect consistency. 'Our robo-pizza has 0% variance in doneness,' said Stellar Pizza CEO Benson Tsai. Labor savings allow higher wages for human staff who focus on customer service. Early data shows robotic kitchens reduce food waste by 22% and health code violations by 90%. While fine dining still values human chefs, analysts predict 40% of restaurant meals will involve some automation by 2026, reshaping the $900 billion foodservice industry.",
+      "category": "technology",
+      "date": "2023-04-24",
+      "author": "Daniel Kim",
+      "imageUrl": "https://images.unsplash.com/photo-1606787366850-de6330128bfc",
+      "featured": true,
+      "readTime": "4 min read",
+      "tags": [
+        "Robotics",
+        "AI",
+        "Food Tech"
+      ],
+      "views": 9876,
+      "comments": 154
+    },
+    {
+      "id": 14,
+      "title": "Psychedelic Therapy Legalized in 10 More States",
+      "summary": "MDMA and psilocybin approved for clinical use against depression and PTSD",
+      "content": "A wave of state legislatures has legalized medically supervised psychedelic treatments following landmark FDA designations. The protocols involve 2-3 guided sessions with pure MDMA or psilocybin mushrooms, showing 70% remission rates for PTSD in trials. 'These aren't party drugs but precision medicines,' emphasized Dr. Rachel Goodwin of MAPS. Strict controls require administration at licensed centers with psychotherapy integration. Veterans' groups championed the laws after conventional treatments failed many service members. Pharmaceutical companies are racing to develop synthetic analogs without hallucinogenic effects, though some researchers argue the mystical experience is therapeutic. The DEA is expected to reschedule these compounds nationally by 2024.",
+      "category": "health",
+      "date": "2023-04-23",
+      "author": "Gabriela Silva",
+      "imageUrl": "https://images.unsplash.com/photo-1516550893923-42d28e5677af",
+      "featured": true,
+      "readTime": "6 min read",
+      "tags": [
+        "Mental Health",
+        "Neuroscience",
+        "Policy"
+      ],
+      "views": 17654,
+      "comments": 432
+    },
+    {
+      "id": 15,
+      "title": "First Carbon-Neutral City Opens in Saudi Arabia",
+      "summary": "The Line's revolutionary design houses 9 million with zero cars or emissions",
+      "content": "Saudi Arabia has inaugurated the first phase of its $500 billion NEOM megacity—a 170km-long, 500m-tall mirrored structure running entirely on renewable energy. The Line's radical linear design eliminates roads and cars, with high-speed transit connecting communities in under 20 minutes. 'This redefines urban living,' said project director Nadhmi Al-Nasr. AI manages resource distribution to maintain net-zero operations, while vertical gardens provide food and oxygen. Critics question the project's feasibility and $1 trillion eventual cost, but its success could inspire similar eco-cities. Early residents report higher productivity and wellbeing in the noise-free, pollution-less environment. If fully realized, The Line may become a blueprint for sustainable megacities as global urban populations swell.",
+      "category": "environment",
+      "date": "2023-04-22",
+      "author": "Yusuf Al-Farsi",
+      "imageUrl": "https://images.unsplash.com/photo-1679678691328-54929d271cc3",
+      "featured": true,
+      "readTime": "5 min read",
+      "tags": [
+        "Architecture",
+        "Sustainability",
+        "Innovation"
+      ],
+      "views": 21345,
+      "comments": 587
+    },
+    {
+      "id": 16,
+      "title": "Lab-Grown Meat Approved for Sale in US Supermarkets",
+      "summary": "FDA clears cultivated chicken that's identical to conventional poultry",
+      "content": "After a decade of development, lab-grown meat will hit US grocery stores next month following final regulatory approval. Upside Foods and Good Meat use bioreactors to grow real chicken from cells without slaughter. 'The taste and nutrition are indistinguishable,' said food scientist Dr. Helen Zhang. The products cost $11 per pound—down from $330,000 for the first lab burger in 2013. Environmental benefits are significant, requiring 90% less land and water than traditional farming. While some consumers remain wary, 62% in surveys say they'd try cultivated meat. The industry aims for price parity by 2025, potentially disrupting the $1.7 trillion global meat market and reducing agriculture's climate impact.",
+      "category": "science",
+      "date": "2023-04-21",
+      "author": "Nathan Brooks",
+      "imageUrl": "https://images.unsplash.com/photo-1606787366850-de6330128bfc",
+      "featured": true,
+      "readTime": "4 min read",
+      "tags": [
+        "Biotech",
+        "Food Science",
+        "Sustainability"
+      ],
+      "views": 14321,
+      "comments": 321
+    }
+  ],
+  "articles1": [
+    {
+      "id": 1,
+      "title": "NASA Announces Plans for Lunar Base by 2030",
+      "summary": "Ambitious Artemis program expands to include permanent moon habitat",
+      "content": "NASA revealed updated plans for its Artemis program that now include establishing a sustainable lunar base within the next decade. The space agency partnered with SpaceX and Blue Origin to develop the necessary landing systems and habitats. 'This is our stepping stone to Mars,' said NASA Administrator Bill Nelson. The first crewed Artemis landing remains scheduled for 2025, with construction of the lunar base beginning as early as 2028. Scientists highlight the potential for groundbreaking research in low-gravity environments, while economists point to the emerging 'cislunar economy' that could be worth billions. Critics question the program's budget, which has already exceeded $93 billion.",
+      "category": "science",
+      "date": "2023-05-09",
+      "author": "Emily Zhang",
+      "imageUrl": "https://images.unsplash.com/photo-1454789548928-9efd52dc4031",
+      "featured": true,
+      "readTime": "4 min read",
+      "tags": [
+        "Space",
+        "Exploration",
+        "Technology"
+      ],
+      "views": 11234,
+      "comments": 289
+    },
+    {
+      "id": 2,
+      "title": "Electric Vehicle Sales Surpass Gas Cars in Europe",
+      "summary": "Landmark milestone reached as EV adoption accelerates faster than predicted",
+      "content": "For the first time in automotive history, electric vehicles accounted for over 51% of new car sales in Western Europe last quarter, according to industry analysts. This rapid transition, originally projected for 2030, has been driven by improved battery technology, government incentives, and changing consumer preferences. 'The tipping point came sooner than anyone expected,' said auto analyst Michael Braun. Major automakers are scrambling to adjust production plans as demand for combustion engines declines sharply. The shift presents challenges for infrastructure, with cities racing to install sufficient charging stations. Energy experts warn that power grids will need significant upgrades to handle the increased electrical load.",
+      "category": "technology",
+      "date": "2023-05-08",
+      "author": "Thomas Fischer",
+      "imageUrl": "https://images.unsplash.com/photo-1551836022-d5d88e9218df",
+      "featured": true,
+      "readTime": "3 min read",
+      "tags": [
+        "EV",
+        "Automotive",
+        "Sustainability"
+      ],
+      "views": 8765,
+      "comments": 142
+    },
+    {
+      "id": 3,
+      "title": "Breakthrough in Alzheimer's Treatment Shows Promise",
+      "summary": "Experimental drug slows cognitive decline by 35% in clinical trials",
+      "content": "A new Alzheimer's treatment developed by Biogen and Eisai has shown remarkable results in late-stage clinical trials, reducing cognitive decline by 35% compared to placebo. The drug, called lecanemab, targets amyloid plaques in the brain and represents the first treatment to clearly demonstrate significant slowing of the disease's progression. 'This is the breakthrough we've been waiting for,' said neurologist Dr. Sarah Johnson. While not a cure, the treatment could preserve quality of life for millions of patients. The FDA has granted priority review, with a decision expected by early 2024. Some concerns remain about potential side effects, including brain swelling and bleeding in a small percentage of patients.",
+      "category": "health",
+      "date": "2023-05-07",
+      "author": "Robert Chen",
+      "imageUrl": "https://images.unsplash.com/photo-1579684385127-1ef15d508118",
+      "featured": true,
+      "readTime": "5 min read",
+      "tags": [
+        "Medicine",
+        "Research",
+        "Neuroscience"
+      ],
+      "views": 15321,
+      "comments": 378
+    },
+    {
+      "id": 4,
+      "title": "Global Tech Giants Announce Massive Layoffs",
+      "summary": "Meta, Amazon, and Google cut over 50,000 jobs amid economic uncertainty",
+      "content": "In a stunning reversal from their pandemic-era hiring sprees, major tech companies announced sweeping job cuts totaling more than 50,000 positions. The layoffs reflect growing economic concerns and a shift in priorities toward profitability over growth. 'We hired aggressively coming out of COVID, and that was a mistake,' said Meta CEO Mark Zuckerberg. The cuts span across divisions but particularly impact recruiting, human resources, and experimental projects. Economists warn the layoffs could ripple through local economies in tech hubs like Silicon Valley and Seattle. Meanwhile, some smaller tech firms see an opportunity to hire experienced talent suddenly on the market.",
+      "category": "business",
+      "date": "2023-05-06",
+      "author": "Jennifer Lee",
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
+      "featured": true,
+      "readTime": "4 min read",
+      "tags": [
+        "Tech",
+        "Economy",
+        "Workforce"
+      ],
+      "views": 14321,
+      "comments": 512
+    },
+    {
+      "id": 5,
+      "title": "Archaeologists Discover Lost Mayan City",
+      "summary": "LiDAR technology reveals vast ancient metropolis hidden beneath jungle canopy",
+      "content": "A team of archaeologists using advanced LiDAR scanning technology has uncovered a previously unknown Mayan city in the dense jungles of northern Guatemala. The sprawling site, named Ocomtún, features pyramids, ball courts, and an elaborate network of roads and canals. 'This changes our understanding of Mayan civilization's scale and complexity,' said lead researcher Dr. Hernandez. The discovery suggests the region supported a much larger population than previously believed at the height of Mayan power around 600-900 AD. The team plans limited excavations but emphasizes the importance of preserving the site from looters. The find comes as LiDAR revolutionizes archaeology, revealing hundreds of ancient sites across Central America.",
+      "category": "science",
+      "date": "2023-05-05",
+      "author": "Carlos Mendez",
+      "imageUrl": "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1",
+      "featured": true,
+      "readTime": "4 min read",
+      "tags": [
+        "Archaeology",
+        "History",
+        "Discovery"
+      ],
+      "views": 7654,
+      "comments": 98
+    },
+    {
+      "id": 6,
+      "title": "Record-Breaking Athlete Smashes 100m World Record",
+      "summary": "American sprinter runs 9.45 seconds with revolutionary new training technique",
+      "content": "In what track experts are calling the most significant athletic achievement since the four-minute mile, American sprinter Jordan Williams shattered the 100-meter world record with an astonishing 9.45-second run. The 24-year-old credits his breakthrough to a neuroscience-based training regimen that optimizes neural pathways for explosive starts. 'This shows we're nowhere near human limits,' said sports scientist Dr. Tanaka. The previous record of 9.58 seconds had stood for nearly 15 years. Williams' performance has sparked debate about potential rule changes to maintain competition fairness, as his reaction time of 0.08 seconds approaches the theoretical minimum for human perception.",
+      "category": "sports",
+      "date": "2023-05-04",
+      "author": "Marcus Johnson",
+      "imageUrl": "https://images.unsplash.com/photo-1543351611-58f69d7c1781",
+      "featured": true,
+      "readTime": "3 min read",
+      "tags": [
+        "Athletics",
+        "Record",
+        "Performance"
+      ],
+      "views": 18765,
+      "comments": 423
+    },
+    {
+      "id": 7,
+      "title": "Renewable Energy Provides 50% of US Electricity for First Time",
+      "summary": "Solar and wind power reach historic milestone amid rapid infrastructure growth",
+      "content": "The United States reached a clean energy milestone last month as wind, solar, and other renewables generated more electricity than coal and nuclear combined. This first-ever achievement reflects years of investment in renewable infrastructure and improved battery storage technology. 'We're witnessing an energy transformation in real time,' said Energy Secretary Jennifer Granholm. The shift comes despite political and regulatory challenges, with renewables proving increasingly cost-competitive. Analysts note the grid will require massive upgrades to handle the intermittent nature of renewable sources. The milestone puts the US closer to its goal of 100% clean electricity by 2035, though natural gas remains the single largest power source for now.",
+      "category": "environment",
+      "date": "2023-05-03",
+      "author": "Sarah Wilson",
+      "imageUrl": "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d",
+      "featured": true,
+      "readTime": "4 min read",
+      "tags": [
+        "Energy",
+        "Sustainability",
+        "Climate"
+      ],
+      "views": 9543,
+      "comments": 176
+    },
+    {
+      "id": 8,
+      "title": "New Digital Currency Launched by Federal Reserve",
+      "summary": "FedNow instant payment system goes live with potential to transform banking",
+      "content": "The Federal Reserve has launched its long-awaited digital currency platform, FedNow, enabling instant money transfers between individuals and businesses 24/7. Unlike cryptocurrency, the Fed's system is centralized and dollar-denominated, aiming to modernize the US payment infrastructure. 'This brings America into the 21st century of payments,' said Treasury Secretary Yellen. Early adopters include major banks and retailers, with plans to expand access to all consumers by 2024. The system could eventually challenge credit card networks and reduce reliance on private payment apps. Privacy advocates express concerns about government surveillance capabilities, while proponents argue it will improve financial inclusion for underbanked populations.",
+      "category": "business",
+      "date": "2023-05-02",
+      "author": "David Peterson",
+      "imageUrl": "https://images.unsplash.com/photo-1621761191319-c6fb62004040",
+      "featured": true,
+      "readTime": "5 min read",
+      "tags": [
+        "Finance",
+        "Technology",
+        "Banking"
+      ],
+      "views": 12345,
+      "comments": 321
+    },
+    {
+      "id": 9,
+      "title": "Pandemic Origin Study Points to Natural Transmission",
+      "summary": "Comprehensive WHO report finds strongest evidence yet for zoonotic origin",
+      "content": "After three years of intensive investigation, an international team of scientists convened by the WHO has concluded the COVID-19 pandemic most likely originated from natural transmission between animals and humans. The 300-page report cites genetic evidence from the Huanan market in Wuhan and similar coronavirus spillover events. 'The data overwhelmingly point to zoonotic origin,' said lead researcher Dr. Liang. While not ruling out all alternative theories, the study found no credible evidence supporting lab leak scenarios. The findings could reshape global pandemic preparedness efforts, with experts calling for improved wildlife market regulations and early warning systems to detect potential outbreaks before they spread.",
+      "category": "health",
+      "date": "2023-05-01",
+      "author": "Naomi Kato",
+      "imageUrl": "https://images.unsplash.com/photo-1584483766114-2cea6facdf57",
+      "featured": true,
+      "readTime": "6 min read",
+      "tags": [
+        "Pandemic",
+        "Research",
+        "Public Health"
+      ],
+      "views": 15678,
+      "comments": 543
     }
   ],
   "categories": [
-    {"id": 1, "name": "technology", "displayName": "Technology"},
-    {"id": 2, "name": "business", "displayName": "Business"},
-    {"id": 3, "name": "environment", "displayName": "Environment"},
-    {"id": 4, "name": "health", "displayName": "Health"},
-    {"id": 5, "name": "entertainment", "displayName": "Entertainment"},
-    {"id": 6, "name": "politics", "displayName": "Politics"},
-    {"id": 7, "name": "sports", "displayName": "Sports"}
+    {
+      "id": 1,
+      "name": "technology",
+      "displayName": "Technology"
+    },
+    {
+      "id": 2,
+      "name": "business",
+      "displayName": "Business"
+    },
+    {
+      "id": 3,
+      "name": "environment",
+      "displayName": "Environment"
+    },
+    {
+      "id": 4,
+      "name": "health",
+      "displayName": "Health"
+    },
+    {
+      "id": 5,
+      "name": "entertainment",
+      "displayName": "Entertainment"
+    },
+    {
+      "id": 6,
+      "name": "politics",
+      "displayName": "Politics"
+    },
+    {
+      "id": 7,
+      "name": "sports",
+      "displayName": "Sports"
+    }
   ],
   "trendingTags": [
-    {"name": "AI", "count": 24},
-    {"name": "Markets", "count": 18},
-    {"name": "Climate", "count": 15},
-    {"name": "Health", "count": 12},
-    {"name": "Streaming", "count": 10}
+    {
+      "name": "AI",
+      "count": 24
+    },
+    {
+      "name": "Markets",
+      "count": 18
+    },
+    {
+      "name": "Climate",
+      "count": 15
+    },
+    {
+      "name": "Health",
+      "count": 12
+    },
+    {
+      "name": "Streaming",
+      "count": 10
+    }
   ]
 }

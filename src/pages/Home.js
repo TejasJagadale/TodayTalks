@@ -6,20 +6,23 @@ import TrendingTags from "../components/TrendingTags";
 // import NewsletterSignup from "../components/NewsletterSignup";
 import "../styles/Home.css";
 import ArticleDetail from "../components/ArticleDetail";
+import AdSenseLoader from "../components/AdSenseLoader";
 
 const Home = () => {
   const [articles, setArticles] = useState([]);
-  const [categories, setCategories] = useState([]);
+  const [articles1, setArticles1] = useState([]);
+  // const [categories, setCategories] = useState([]);
   const [trendingTags, setTrendingTags] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [activeCategory, setActiveCategory] = useState("all");
+  // const [activeCategory, setActiveCategory] = useState("all");
 
   useEffect(() => {
     fetch("/data/news.json")
       .then((response) => response.json())
       .then((data) => {
         setArticles(data.articles);
-        setCategories(data.categories);
+        setArticles1(data.articles1);
+        // setCategories(data.categories);
         setTrendingTags(data.trendingTags);
         setLoading(false);
       })
@@ -38,16 +41,12 @@ const Home = () => {
     );
   }
 
-  const featuredArticles = articles.filter((article) => article.featured);
-  const regularArticles =
-    activeCategory === "all"
-      ? articles.filter((article) => !article.featured)
-      : articles.filter(
-          (article) => !article.featured && article.category === activeCategory
-        );
+  const featuredArticles = articles1.filter((article) => article.featured);
+  const regularArticles = articles.filter((article) => article.featured);
 
   return (
     <div className="home-container">
+      <AdSenseLoader />
       <div className="breaking-news-banner">
         <span>BREAKING:</span> AI Breakthrough Announced - New Model Surpasses
         Human Performance
@@ -75,7 +74,7 @@ const Home = () => {
             </div>
           </section>
 
-          <AdSenseAd slotId="1234567890" format="horizontal" />
+          <AdSenseAd key="3581145953" slotId="3581145953" format="horizontal" />
 
           <section className="regular-news">
             <div className="section-header">
@@ -92,7 +91,7 @@ const Home = () => {
                 <NewsCard key={article.id} article={article} />
               ))}
             </div>
-            <button className="load-more">Load More Stories</button>
+            {/* <button className="load-more">Load More Stories</button> */}
           </section>
         </div>
 
@@ -117,9 +116,9 @@ const Home = () => {
                     >
                       {article.title}
                     </a>
-                    <span className="popular-views">
+                    {/* <span className="popular-views">
                       {article.views.toLocaleString()} views
-                    </span>
+                    </span> */}
                   </div>
                 ))}
             </div>
@@ -128,13 +127,7 @@ const Home = () => {
           <ArticleDetail />
 
           {/* <AdSenseAd slotId="0987654321" format="rectangle" /> */}
-          <AdSenseAd
-            slotId="3581145953"
-            format="Display"
-            layoutKey="" // For matched content ads
-            testMode={false} // For AdSense sandbox testing
-            timeout={2000} // Timeout before showing fallback
-          />
+          <AdSenseAd key="3581145953" slotId="3581145953" format="horizontal" />
         </aside>
       </main>
     </div>
