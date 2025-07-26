@@ -6,7 +6,7 @@ const AdSenseAd = ({
   format = "auto",
   layoutKey = "",
   testMode = false,
-  timeout = 5000 // Increased timeout
+  timeout = 5000
 }) => {
   const [adFailed, setAdFailed] = useState(false);
   const [scriptLoaded, setScriptLoaded] = useState(false);
@@ -57,7 +57,7 @@ const AdSenseAd = ({
   const getAdStyle = () => {
     const styles = {
       display: "block",
-      overflow: "hidden" // Added to prevent layout shifts
+      overflow: "hidden"
     };
 
     if (format === "horizontal") {

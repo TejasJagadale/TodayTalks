@@ -5,6 +5,27 @@
   box-shadow: var(--shadow);
 }
 
+/* Active tag style */
+.tags-container .tag.active {
+  background: #4a6fa5;
+  color: white;
+}
+
+/* Clear filter button */
+.clear-filter {
+  display: block;
+  margin-top: 10px;
+  background: none;
+  border: none;
+  color: #4a6fa5;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.clear-filter:hover {
+  text-decoration: underline;
+}
+
 .trending-tags h3 {
   font-family: var(--font-heading);
   color: var(--primary-color);
@@ -29,6 +50,7 @@
   display: flex;
   align-items: center;
   gap: 0.3rem;
+  border: none;
 }
 
 .trending-tags .tag:hover {

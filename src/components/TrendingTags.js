@@ -1,18 +1,29 @@
 import React from "react";
-import "../styles/TrandingTags.css"
+import "../styles/TrandingTags.css";
 
-const TrendingTags = ({ tags }) => {
+const TrendingTags = ({ tags, selectedTag, onTagClick }) => {
   return (
     <div className="trending-tags">
       <h3>Trending Topics</h3>
       <div className="tags-container">
         {tags.map((tag, index) => (
-          <a key={index} href={`/tag/${tag.name}`} className="tag">
-            {tag.name} 
-            {/* <span className="tag-count">{tag.count}</span> */}
-          </a>
+          <button
+            key={index}
+            className={`tag ${selectedTag === tag ? 'active' : ''}`}
+            onClick={() => onTagClick(tag)}
+          >
+            {tag}
+          </button>
         ))}
       </div>
+      {selectedTag && (
+        <button 
+          className="clear-filter"
+          onClick={() => onTagClick(null)}
+        >
+          Clear Filter
+        </button>
+      )}
     </div>
   );
 };

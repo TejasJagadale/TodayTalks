@@ -1,0 +1,127 @@
+.privacy-policy {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.privacy-policy .containerpp {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.privacy-policy h1 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 2.2rem;
+}
+
+.privacy-policy .last-updated {
+  color: #7f8c8d;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.privacy-policy h2 {
+  color: #3498db;
+  margin: 25px 0 15px;
+  font-size: 1.5rem;
+}
+
+.privacy-policy p {
+  margin-bottom: 15px;
+}
+
+.privacy-policy ul {
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+.privacy-policy li {.privacy-policy {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.privacy-policy .containerpp {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.privacy-policy h1 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 2.2rem;
+}
+
+.privacy-policy .last-updated {
+  color: #7f8c8d;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.privacy-policy h2 {
+  color: #3498db;
+  margin: 25px 0 15px;
+  font-size: 1.5rem;
+}
+
+.privacy-policy p {
+  margin-bottom: 15px;
+}
+
+.privacy-policy ul {
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+.privacy-policy li {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .privacy-policy {
+    padding: 15px;
+  }
+  
+  .privacy-policy .containerpp {
+    padding: 20px;
+  }
+  
+  .privacy-policy h1 {
+    font-size: 1.8rem;
+  }
+  
+  .privacy-policy h2 {
+    font-size: 1.3rem;
+  }
+}
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .privacy-policy {
+    padding: 15px;
+  }
+  
+  .privacy-policy .containerpp {
+    padding: 20px;
+  }
+  
+  .privacy-policy h1 {
+    font-size: 1.8rem;
+  }
+  
+  .privacy-policy h2 {
+    font-size: 1.3rem;
+  }
+}

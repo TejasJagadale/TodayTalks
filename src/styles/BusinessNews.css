@@ -1,0 +1,23 @@
+/* BusinessNews.css */
+.business-news-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.business-news-loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.business-news-error {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #e74c3c;
+  background-color: #fadbd8;
+  border-radius: 4px;
+  margin: 1rem;
+}

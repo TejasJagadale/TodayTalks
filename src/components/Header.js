@@ -1,9 +1,26 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import SearchBar from "./SearchBar";
+import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import "../styles/Header.css";
 
 const Header = () => {
+  const [trendingTopics, setTrendingTopics] = useState([
+    "Climate Summit Updates",
+    "Tech Market Trends",
+    "Global Economy Outlook",
+    "Space Exploration News",
+    "Health Breakthroughs"
+  ]);
+  const [currentTopicIndex, setCurrentTopicIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentTopicIndex((prevIndex) => 
+        prevIndex === trendingTopics.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [trendingTopics.length]);
+
   return (
     <header className="site-header">
       <div className="header-top">
@@ -24,37 +41,19 @@ const Header = () => {
       </div>
       <div className="header-main">
         <div className="container">
-          <Link to="/" className="logo">
+          <NavLink to="/" className="logo">
             <h1>TodayTalks</h1>
             <span className="subbtext">Your trusted news source</span>
-          </Link>
-          <SearchBar />
+          </NavLink>
+          
+          <div className="trending-topics">
+            <span className="trending-label">Trending:</span>
+            <div className="topic-ticker">
+              {trendingTopics[currentTopicIndex]}
+            </div>
+          </div>
         </div>
       </div>
-      <nav className="main-nav">
-        <div className="container">
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/category/technology">Technology</Link>
-            </li>
-            <li>
-              <Link to="/category/business">Business</Link>
-            </li>
-            <li>
-              <Link to="/category/environment">Environment</Link>
-            </li>
-            <li>
-              <Link to="/category/health">Health</Link>
-            </li>
-            <li>
-              <Link to="/category/entertainment">Entertainment</Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
     </header>
   );
 };

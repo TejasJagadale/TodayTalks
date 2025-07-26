@@ -518,23 +518,28 @@
   "trendingTags": [
     {
       "name": "AI",
-      "count": 24
+      "count": 24,
+      "site": "https://news.mit.edu/topic/artificial-intelligence2"
     },
     {
       "name": "Markets",
-      "count": 18
+      "count": 18,
+      "site": "https://www.moneycontrol.com/"
     },
     {
       "name": "Climate",
-      "count": 15
+      "count": 15,
+      "site": "https://www.bbc.com/news/topics/cmj34zmwm1zt"
     },
     {
       "name": "Health",
-      "count": 12
+      "count": 12,
+      "site": "https://www.medicalnewstoday.com/"
     },
     {
       "name": "Streaming",
-      "count": 10
+      "count": 10,
+      "site": "https://www.streamingmedia.com/"
     }
   ]
 }

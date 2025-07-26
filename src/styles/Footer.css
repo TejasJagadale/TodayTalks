@@ -4,13 +4,11 @@
 }
 
 .footer-main {
-  padding: 3rem 0;
+  padding: 1.6rem 0;
 }
 
 .footer-main .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
+  display: flex;
 }
 
 .footer-column h3,

@@ -1,20 +1,41 @@
-import React, { useState } from "react";
-import "../styles/SearchBar.css"
+import React, { useState, useEffect } from "react";
+import "../styles/SearchBar.css";
+import { useNavigate, useLocation } from "react-router-dom";
 
-const SearchBar = () => {
+const SearchBar = ({ selectedCategory }) => {
+  const navigate = useNavigate();
+  const location = useLocation();
   const [query, setQuery] = useState("");
   const [isFocused, setIsFocused] = useState(false);
 
-  const handleSubmit = (e) => {
+  // Initialize search query from URL
+  useEffect(() => {
+    const searchParams = new URLSearchParams(location.search);
+    const urlQuery = searchParams.get("q");
+    if (urlQuery) {
+      setQuery(decodeURIComponent(urlQuery));
+    }
+  }, [location.search]);
+
+  const handleSearch = (e) => {
     e.preventDefault();
-    // In a real app, you would handle the search
-    console.log("Searching for:", query);
+    if (query.trim()) {
+      navigate(
+        `/category/${selectedCategory}?q=${encodeURIComponent(query.trim())}`
+      );
+    }
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      handleSearch(e);
+    }
   };
 
   return (
     <form
       className={`search-bar ${isFocused ? "focused" : ""}`}
-      onSubmit={handleSubmit}
+      onSubmit={handleSearch}
     >
       <input
         className="search-inputbar"
@@ -24,8 +45,9 @@ const SearchBar = () => {
         onChange={(e) => setQuery(e.target.value)}
         onFocus={() => setIsFocused(true)}
         onBlur={() => setIsFocused(false)}
+        onKeyDown={handleKeyDown}
       />
-      <button type="submit">
+      <button type="submit" aria-label="Search">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"

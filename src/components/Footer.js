@@ -14,7 +14,7 @@ const Footer = () => {
               around the world.
             </p>
           </div>
-          <div className="footer-column">
+          {/* <div className="footer-column">
             <h4>Categories</h4>
             <ul>
               <li>
@@ -33,7 +33,7 @@ const Footer = () => {
                 <Link to="/category/entertainment">Entertainment</Link>
               </li>
             </ul>
-          </div>
+          </div> */}
           <div className="footer-column">
             <h4>Company</h4>
             <ul>
@@ -55,14 +55,14 @@ const Footer = () => {
             <h4>Legal</h4>
             <ul>
               <li>
-                <Link to="/privacy">Privacy Policy</Link>
+                <Link to="/privacypolicy">Privacy Policy</Link>
               </li>
               <li>
-                <Link to="/terms">Terms of Service</Link>
+                <Link to="/termsandconditions">Terms of Service</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/cookies">Cookie Policy</Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
@@ -70,7 +70,7 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="container">
           <p>
-            &copy; {new Date().getFullYear()} NewsHub. All rights reserved.
+            &copy; {new Date().getFullYear()} TodayTalks. All rights reserved.
           </p>
           <div className="social-links">
             <a href="https://facebook.com" aria-label="Facebook">
