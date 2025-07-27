@@ -6,6 +6,7 @@ import "../styles/NewsCard.css";
 const NewsCard = ({ article, featured = false }) => {
   const navigate = useNavigate();
   const formattedDate = format(new Date(article.createdAt), 'MMMM d, yyyy');
+  if (article.status === false) return null;
 
   const handleClick = () => {
     navigate(`/article/${article._id}`, { state: { article } });
