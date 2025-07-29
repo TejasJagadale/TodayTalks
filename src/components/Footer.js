@@ -43,12 +43,6 @@ const Footer = () => {
               <li>
                 <Link to="/contact">Contact</Link>
               </li>
-              <li>
-                <Link to="/careers">Careers</Link>
-              </li>
-              <li>
-                <Link to="/advertise">Advertise</Link>
-              </li>
             </ul>
           </div>
           <div className="footer-column">
@@ -60,9 +54,6 @@ const Footer = () => {
               <li>
                 <Link to="/termsandconditions">Terms of Service</Link>
               </li>
-              {/* <li>
-                <Link to="/cookies">Cookie Policy</Link>
-              </li> */}
             </ul>
           </div>
         </div>

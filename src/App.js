@@ -13,6 +13,8 @@ import New from "./components/New";
 import CategoryNav from "./components/CategoryNav.js";
 import PrivacyPolicy from "./components/PrivacyPolicy.js";
 import TermsAndConditions from "./components/TermsandConditions.js";
+import AboutUs from "./pages/AboutUs.js";
+import Contact from "./pages/Contact.js";
 // import TrendingTechNews from "./components/TrendingTechNews.js";
 // import BusinessNews from "./components/BusinessNews.js";
 // import HealthNews from "./components/HealthNews.js";
@@ -43,6 +45,8 @@ function App() {
           <Route path="/news" element={<New />} />
           {/* <Route path="/category/technology" element={<TrendingTechNews />} /> */}
           <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/contact" element={<Contact />} />
           {/* <Route path="/category/business" element={<BusinessNews />} /> */}
           {/* <Route path="/category/health" element={<HealthNews />} /> */}
           {/* <Route

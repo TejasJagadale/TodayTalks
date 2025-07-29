@@ -56,7 +56,7 @@ const TermsAndConditions = () => {
         
         <section>
           <h2>9. Contact Information</h2>
-          <p>For questions about these Terms and Conditions, please contact us at legal@todaytalks.com.</p>
+          <p>For questions about these Terms and Conditions, please contact us at todaytalks.office@gmail.com.</p>
         </section>
       </div>
     </div>

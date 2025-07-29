@@ -1,7 +1,10 @@
+//
+
 import React from "react";
-import { useLocation, useNavigate  } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { format } from "date-fns";
 import "../styles/ArticleDetail.css";
+import AdSenseAd from "./AdSenseAd";
 
 const ArticleDetail = () => {
   const location = useLocation();
@@ -12,50 +15,92 @@ const ArticleDetail = () => {
     navigate(`/article/${article._id}`, { state: { article } });
   };
 
-  console.log(article);
-
   if (!article) {
-    return <div className="not-found">Article data not available</div>;
+    return (
+      <div className="not-found">
+        <h2>Article Not Found</h2>
+        <p>The article you're looking for is not available.</p>
+        <button onClick={() => navigate("/")}>Return to Home</button>
+      </div>
+    );
   }
 
-  const formattedDate = format(new Date(article.createdAt), "MMMM d, yyyy");
+  // Fallback to publishedAt if createdAt doesn't exist
+  const articleDate = article.createdAt || article.publishedAt;
+  const formattedDate = articleDate
+    ? format(new Date(articleDate), "MMMM d, yyyy")
+    : "Date not available";
 
   return (
-    <div
-      className="article-detail"
-      onClick={handleClick}
-      style={{ cursor: "pointer" }}
-    >
+    <div className="article-detail">
       <article>
         <header className="article-header">
           <h1>{article.title}</h1>
           <div className="article-meta">
             <span className="publication-date">{formattedDate}</span>
             {article.trending && (
-              <span className="trending-badge">Trending</span>
+              <span className="trending-badge">🔥 Trending</span>
+            )}
+            {article.category && (
+              <span className="category-badge">{article.category}</span>
             )}
           </div>
         </header>
 
         <div className="card-image1">
-          <img src={article.imageUrl} alt=""></img>
+          <img
+            src={article.imageUrl}
+            alt={article.title}
+            onError={(e) => {
+              e.target.src = "/default-news-image.jpg";
+              e.target.alt = "Default news image";
+            }}
+          />
         </div>
 
         <div className="article-content">
-          <p className="lead">{article.summary}</p>
-          <p>{article.description}</p>
+          {article.description && (
+            <div className="ad-container">
+              <AdSenseAd
+                slotId="article_content_ad"
+                format="rectangle"
+                style={{ display: "block" }}
+              />
+              <p>{article.description}</p>
+            </div>
+          )}
+          {article.content && <p>{article.content}</p>}
         </div>
+
+        {article.sourceUrl && (
+          <div className="source-link">
+            <a
+              href={article.sourceUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Read full story at source
+            </a>
+          </div>
+        )}
 
         {article.tags?.length > 0 && (
           <div className="article-tags">
-            {article.tags.map((tag, index) => (
-              <span key={index} className="tag">
-                {tag}
-              </span>
-            ))}
+            <h3>Related Topics:</h3>
+            <div className="tags-container">
+              {article.tags.map((tag, index) => (
+                <span key={index} className="tag">
+                  #{tag}
+                </span>
+              ))}
+            </div>
           </div>
         )}
       </article>
+
+      <button className="back-button" onClick={() => navigate(-1)}>
+        ← Back to previous page
+      </button>
     </div>
   );
 };

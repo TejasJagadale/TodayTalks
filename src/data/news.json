@@ -1,0 +1,1151 @@
+[
+  {
+    "_id": "tech1",
+    "title": "AI-Powered Robots Now Performing Complex Surgeries",
+    "description": "Stanford researchers developed an AI system that outperforms human doctors in diagnosing complex medical cases.",
+    "content": "AI integration into robotic surgery is transforming how complex procedures are performed. Traditional robotic systems, like the da Vinci Surgical System, have already improved surgical precision and control. However, the addition of AI allows these systems to analyze vast amounts of surgical data, recognize patterns, and assist surgeons in real-time. This capability enhances decision-making, reduces human error, and allows for continuous learning, making the robots smarter with each procedure.",
+    "imageUrl": "/images/technology/1.jpg",
+    "category": "Technology",
+    "tags": [
+      "AI",
+      "Healthcare",
+      "Medical Innovation"
+    ],
+    "wordCount": 450,
+    "publishedAt": "2023-08-20T09:00:00Z"
+  },
+  {
+    "_id": "tech2",
+    "title": "Apple Unveils Foldable iPhone with Holographic Display",
+    "description": "Researchers achieve quantum supremacy with new 256-qubit processor that cracked RSA-2048.",
+    "content": "Apple is reportedly planning to launch its first foldableiPhone -- the iPhone Fold in 2026. Now, the latest leaks related tothe device have revealed some crucial information. According to Taiwaneseresearch firm TrendForce, the upcoming foldable iPhone could sporta 7.8-inch inner display and a 5.5-inch outer display. These numbers matchearlier predictions from well-known analyst Ming-Chi Kuo.In comparison, Samsung’s latest foldable phone the Galaxy Z Fold 7 currently comes with an 8-inch inner display and a 6.5-inch outer screen. It means the upcoming foldable device from Apple will be a little thicker than the Samsung Galaxy Z Fold 7.Apple iPhone Fold Launch Timeline And PriceThe foldable iPhone is expected to launch in the second half of 2026, with a possible debut in September. In terms of pricing, according to a report by MacRumors, the iPhone Fold will reach the US shores at a price range between $1,800 to $2,000. That converts to between Rs 1,54,676 to Rs 1,71,862.",
+    "imageUrl": "/images/technology/2.jpg",
+    "sourceUrl": "https://example.com/quantum-breakthrough",
+    "category": "Technology",
+    "tags": [
+      "Quantum",
+      "Security",
+      "Innovation"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-14T14:30:00Z"
+  },
+  {
+    "_id": "tech3",
+    "title": "Meta’s New VR Headset Reads Brain Signals for Control",
+    "description": "First human trials for brain-chip implants will begin next month with 10 participants.",
+    "content": "Imagine scrolling through your social media feed, sending a message, or skipping a song without tapping a button or resorting to voice commandsjustasubtletwitchofyour hand. That’s the wild promise of Meta’s latest research, and it’s not some distant sci-fi dream.Thanks to a new study published in Nature,we’regettinga sneak peek at how augmented reality (AR) glasses could soon read your intentions before you even fully act on them.Meta’s Reality Labs has been quietly working onatech called surface electromyography (sEMG), which sounds complicated but boils down to one simple idea: detecting the tiny electrical signals your muscles send when youeventhink about moving. Instead of waving your arms around or using a bulky controller, you slip on a lightweight armband. Trained on data from thousands of people, thesystem deciphers minute electrical patterns that the brain sends to your fingers.One test user typed at over 20 words per minute just thinking the stroke motions. The teamsmashed the key hurdles: generalization across users (so it doesn’t need per‑person calibration), consistent gesture recognition, and handwriting decoding, all embedded ina wristband-style interface.The big deal here is speed and subtlety. Current AR controls rely on voice, hand tracking (needs big gestures), or clunky remotes. In its Nature paper, Meta showed off Orion, a prototype wristband that predicted gestures with scary accuracy, even when people barely moved. It worked while typing on a keyboard or holding a coffee without needing to pause your life to interact with tech.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?neuralink,brain",
+    "sourceUrl": "https://example.com/neuralink-fda",
+    "category": "Technology",
+    "tags": [
+      "Neuralink",
+      "AI",
+      "Biotech"
+    ],
+    "trending": false,
+    "status": true,
+    "publishedAt": "2023-07-12T11:20:00Z"
+  },
+  {
+    "_id": "tech4",
+    "title": "ChatGPT-5 Released with Real-Time Learning Capabilities",
+    "description": "Stanford researchers developed an AI system that outperforms human doctors in diagnosing complex medical cases.",
+    "content": "In a groundbreaking study published in Nature Medicine, artificial intelligence has demonstrated remarkable capabilities in diagnosing rare diseases that often baffle physicians. The system, called MediAI, analyzed over 100,000 medical cases and achieved 94% diagnostic accuracy compared to 65% for human specialists. How the Technology Works The AI cross-references patient symptoms with a database of over 10 million medical records, searching for patterns humans might miss. It's not replacing doctors, but augmenting their capabilitiesexplains lead researcher Dr. Sarah Chen. Real-World ImpactIn clinical trials at Mayo Clinic, the system reduced diagnostic timfrom an average of 4 weeks to just 48 hours for complex cases. Early detection of rare conditions like Guillain-Barré syndrome has already savedlives. Ethical Considerations While promising, experts warn about data privacy concerns and the need for human oversight. The FDA is currently reviewing the system for broader clinical use.",
+    "imageUrl": "/images/ai-diagnosis.jpg",
+    "category": "Technology",
+    "tags": [
+      "AI",
+      "Healthcare",
+      "Medical Innovation"
+    ],
+    "wordCount": 450,
+    "publishedAt": "2023-08-20T09:00:00Z"
+  },
+  {
+    "_id": "tech5",
+    "title": "Tesla’s Humanoid Robot Begins Warehouse Work",
+    "description": "Researchers achieve quantum supremacy with new 256-qubit processor that cracked RSA-2048.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?quantum,computer",
+    "sourceUrl": "https://example.com/quantum-breakthrough",
+    "category": "Technology",
+    "tags": [
+      "Quantum",
+      "Security",
+      "Innovation"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-14T14:30:00Z"
+  },
+  {
+    "_id": "tech6",
+    "title": "World’s First 6G Network Tested in Japan",
+    "description": "First human trials for brain-chip implants will begin next month with 10 participants.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?neuralink,brain",
+    "sourceUrl": "https://example.com/neuralink-fda",
+    "category": "Technology",
+    "tags": [
+      "Neuralink",
+      "AI",
+      "Biotech"
+    ],
+    "trending": false,
+    "status": true,
+    "publishedAt": "2023-07-12T11:20:00Z"
+  },
+  {
+    "_id": "tech7",
+    "title": "NASA’s AI Predicts Solar Flares 48 Hours in Advance",
+    "description": "Stanford researchers developed an AI system that outperforms human doctors in diagnosing complex medical cases.",
+    "content": "In a groundbreaking study published in Nature Medicine, artificial intelligence has demonstrated remarkable capabilities in diagnosing rare diseases that often baffle physicians. The system, called MediAI, analyzed over 100,000 medical cases and achieved 94% diagnostic accuracy compared to 65% for human specialists. How the Technology Works The AI cross-references patient symptoms with a database of over 10 million medical records, searching for patterns humans might miss. It's not replacing doctors, but augmenting their capabilitiesexplains lead researcher Dr. Sarah Chen. Real-World ImpactIn clinical trials at Mayo Clinic, the system reduced diagnostic timfrom an average of 4 weeks to just 48 hours for complex cases. Early detection of rare conditions like Guillain-Barré syndrome has already savedlives. Ethical Considerations While promising, experts warn about data privacy concerns and the need for human oversight. The FDA is currently reviewing the system for broader clinical use.",
+    "imageUrl": "/images/ai-diagnosis.jpg",
+    "category": "Technology",
+    "tags": [
+      "AI",
+      "Healthcare",
+      "Medical Innovation"
+    ],
+    "wordCount": 450,
+    "publishedAt": "2023-08-20T09:00:00Z"
+  },
+  {
+    "_id": "tech8",
+    "title": "Google’s Quantum AI Solves Previously Unsolvable Math Problem",
+    "description": "Researchers achieve quantum supremacy with new 256-qubit processor that cracked RSA-2048.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?quantum,computer",
+    "sourceUrl": "https://example.com/quantum-breakthrough",
+    "category": "Technology",
+    "tags": [
+      "Quantum",
+      "Security",
+      "Innovation"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-14T14:30:00Z"
+  },
+  {
+    "_id": "tech9",
+    "title": "Microsoft’s New AI Can Clone Your Voice from a 3-Second Sample",
+    "description": "First human trials for brain-chip implants will begin next month with 10 participants.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?neuralink,brain",
+    "sourceUrl": "https://example.com/neuralink-fda",
+    "category": "Technology",
+    "tags": [
+      "Neuralink",
+      "AI",
+      "Biotech"
+    ],
+    "trending": false,
+    "status": true,
+    "publishedAt": "2023-07-12T11:20:00Z"
+  },
+  {
+    "_id": "tech10",
+    "title": "Self-Healing Electronic Skin Developed for Prosthetics",
+    "description": "Stanford researchers developed an AI system that outperforms human doctors in diagnosing complex medical cases.",
+    "content": "In a groundbreaking study published in Nature Medicine, artificial intelligence has demonstrated remarkable capabilities in diagnosing rare diseases that often baffle physicians. The system, called MediAI, analyzed over 100,000 medical cases and achieved 94% diagnostic accuracy compared to 65% for human specialists. How the Technology Works The AI cross-references patient symptoms with a database of over 10 million medical records, searching for patterns humans might miss. It's not replacing doctors, but augmenting their capabilitiesexplains lead researcher Dr. Sarah Chen. Real-World ImpactIn clinical trials at Mayo Clinic, the system reduced diagnostic timfrom an average of 4 weeks to just 48 hours for complex cases. Early detection of rare conditions like Guillain-Barré syndrome has already savedlives. Ethical Considerations While promising, experts warn about data privacy concerns and the need for human oversight. The FDA is currently reviewing the system for broader clinical use.",
+    "imageUrl": "/images/ai-diagnosis.jpg",
+    "category": "Technology",
+    "tags": [
+      "AI",
+      "Healthcare",
+      "Medical Innovation"
+    ],
+    "wordCount": 450,
+    "publishedAt": "2023-08-20T09:00:00Z"
+  },
+  {
+    "_id": "tech11",
+    "title": "SpaceX’s Starship Completes First Manned Mars Simulation",
+    "description": "Researchers achieve quantum supremacy with new 256-qubit processor that cracked RSA-2048.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?quantum,computer",
+    "sourceUrl": "https://example.com/quantum-breakthrough",
+    "category": "Technology",
+    "tags": [
+      "Quantum",
+      "Security",
+      "Innovation"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-14T14:30:00Z"
+  },
+  {
+    "_id": "tech12",
+    "title": "Facial Recognition Now Works in Complete Darkness",
+    "description": "First human trials for brain-chip implants will begin next month with 10 participants.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?neuralink,brain",
+    "sourceUrl": "https://example.com/neuralink-fda",
+    "category": "Technology",
+    "tags": [
+      "Neuralink",
+      "AI",
+      "Biotech"
+    ],
+    "trending": false,
+    "status": true,
+    "publishedAt": "2023-07-12T11:20:00Z"
+  },
+  {
+    "_id": "tech13",
+    "title": "World’s First Carbon-Neutral Data Center Launched in Iceland",
+    "description": "Stanford researchers developed an AI system that outperforms human doctors in diagnosing complex medical cases.",
+    "content": "In a groundbreaking study published in Nature Medicine, artificial intelligence has demonstrated remarkable capabilities in diagnosing rare diseases that often baffle physicians. The system, called MediAI, analyzed over 100,000 medical cases and achieved 94% diagnostic accuracy compared to 65% for human specialists. How the Technology Works The AI cross-references patient symptoms with a database of over 10 million medical records, searching for patterns humans might miss. It's not replacing doctors, but augmenting their capabilitiesexplains lead researcher Dr. Sarah Chen. Real-World ImpactIn clinical trials at Mayo Clinic, the system reduced diagnostic timfrom an average of 4 weeks to just 48 hours for complex cases. Early detection of rare conditions like Guillain-Barré syndrome has already savedlives. Ethical Considerations While promising, experts warn about data privacy concerns and the need for human oversight. The FDA is currently reviewing the system for broader clinical use.",
+    "imageUrl": "/images/ai-diagnosis.jpg",
+    "category": "Technology",
+    "tags": [
+      "AI",
+      "Healthcare",
+      "Medical Innovation"
+    ],
+    "wordCount": 450,
+    "publishedAt": "2023-08-20T09:00:00Z"
+  },
+  {
+    "_id": "tech14",
+    "title": "Hackers Breach AI Systems Using ‘Hypnotic’ Code",
+    "description": "Researchers achieve quantum supremacy with new 256-qubit processor that cracked RSA-2048.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?quantum,computer",
+    "sourceUrl": "https://example.com/quantum-breakthrough",
+    "category": "Technology",
+    "tags": [
+      "Quantum",
+      "Security",
+      "Innovation"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-14T14:30:00Z"
+  },
+  {
+    "_id": "tech15",
+    "title": "3D-Printed Homes Now Cheaper Than Traditional Construction",
+    "description": "First human trials for brain-chip implants will begin next month with 10 participants.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?neuralink,brain",
+    "sourceUrl": "https://example.com/neuralink-fda",
+    "category": "Technology",
+    "tags": [
+      "Neuralink",
+      "AI",
+      "Biotech"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-12T11:20:00Z"
+  },
+  {
+    "_id": "bus1",
+    "title": "Bitcoin Hits All-Time High at $100K After ETF Approval",
+    "description": "Federal Reserve raises interest rates for the tenth consecutive time to combat persistent inflation.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?federal,reserve",
+    "sourceUrl": "https://example.com/fed-rate-hike",
+    "category": "Business",
+    "tags": [
+      "Economy",
+      "Finance",
+      "Banking"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-15T16:45:00Z"
+  },
+  {
+    "_id": "bus2",
+    "title": "Amazon Drone Delivery Expands to 10 New Cities",
+    "description": "New Alexa feature can suggest products before customers realize they need them.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?amazon,shopping",
+    "sourceUrl": "https://example.com/amazon-ai-shopping",
+    "category": "Business",
+    "tags": [
+      "Amazon",
+      "#AI",
+      "Retail"
+    ],
+    "trending": false,
+    "status": true,
+    "publishedAt": "2023-07-14T10:15:00Z"
+  },
+  {
+    "_id": "bus3",
+    "title": "Elon Musk Steps Down as Tesla CEO",
+    "description": "Federal Reserve raises interest rates for the tenth consecutive time to combat persistent inflation.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?federal,reserve",
+    "sourceUrl": "https://example.com/fed-rate-hike",
+    "category": "Business",
+    "tags": [
+      "Economy",
+      "Finance",
+      "Banking"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-15T16:45:00Z"
+  },
+  {
+    "_id": "bus4",
+    "title": "McDonald’s Fully Automated Location Opens in Texas",
+    "description": "New Alexa feature can suggest products before customers realize they need them.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?amazon,shopping",
+    "sourceUrl": "https://example.com/amazon-ai-shopping",
+    "category": "Business",
+    "tags": [
+      "Amazon",
+      "#AI",
+      "Retail"
+    ],
+    "trending": false,
+    "status": true,
+    "publishedAt": "2023-07-14T10:15:00Z"
+  },
+  {
+    "_id": "bus5",
+    "title": "Goldman Sachs Predicts Global Recession in 2025",
+    "description": "Federal Reserve raises interest rates for the tenth consecutive time to combat persistent inflation.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?federal,reserve",
+    "sourceUrl": "https://example.com/fed-rate-hike",
+    "category": "Business",
+    "tags": [
+      "Economy",
+      "Finance",
+      "Banking"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-15T16:45:00Z"
+  },
+  {
+    "_id": "bus6",
+    "title": "Disney Acquires TikTok for $150B",
+    "description": "New Alexa feature can suggest products before customers realize they need them.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?amazon,shopping",
+    "sourceUrl": "https://example.com/amazon-ai-shopping",
+    "category": "Business",
+    "tags": [
+      "Amazon",
+      "#AI",
+      "Retail"
+    ],
+    "trending": false,
+    "status": true,
+    "publishedAt": "2023-07-14T10:15:00Z"
+  },
+  {
+    "_id": "bus7",
+    "title": "Remote Work Mandated by 60% of Fortune 500 Companies",
+    "description": "Federal Reserve raises interest rates for the tenth consecutive time to combat persistent inflation.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?federal,reserve",
+    "sourceUrl": "https://example.com/fed-rate-hike",
+    "category": "Business",
+    "tags": [
+      "Economy",
+      "Finance",
+      "Banking"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-15T16:45:00Z"
+  },
+  {
+    "_id": "bus8",
+    "title": "Walmart Launches AI-Powered Dynamic Pricing",
+    "description": "New Alexa feature can suggest products before customers realize they need them.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?amazon,shopping",
+    "sourceUrl": "https://example.com/amazon-ai-shopping",
+    "category": "Business",
+    "tags": [
+      "Amazon",
+      "#AI",
+      "Retail"
+    ],
+    "trending": false,
+    "status": true,
+    "publishedAt": "2023-07-14T10:15:00Z"
+  },
+  {
+    "_id": "bus9",
+    "title": "China’s Digital Yuan Replaces Cash in Major Cities",
+    "description": "Federal Reserve raises interest rates for the tenth consecutive time to combat persistent inflation.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?federal,reserve",
+    "sourceUrl": "https://example.com/fed-rate-hike",
+    "category": "Business",
+    "tags": [
+      "Economy",
+      "Finance",
+      "Banking"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-15T16:45:00Z"
+  },
+  {
+    "_id": "bus10",
+    "title": "Uber’s Flying Taxis Begin Commercial Operations in Dubai",
+    "description": "New Alexa feature can suggest products before customers realize they need them.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?amazon,shopping",
+    "sourceUrl": "https://example.com/amazon-ai-shopping",
+    "category": "Business",
+    "tags": [
+      "Amazon",
+      "#AI",
+      "Retail"
+    ],
+    "trending": false,
+    "status": true,
+    "publishedAt": "2023-07-14T10:15:00Z"
+  },
+  {
+    "_id": "bus11",
+    "title": "FTX 2.0 Relaunches with Stricter Regulations",
+    "description": "Federal Reserve raises interest rates for the tenth consecutive time to combat persistent inflation.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?federal,reserve",
+    "sourceUrl": "https://example.com/fed-rate-hike",
+    "category": "Business",
+    "tags": [
+      "Economy",
+      "Finance",
+      "Banking"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-15T16:45:00Z"
+  },
+  {
+    "_id": "bus12",
+    "title": "Netflix Introduces AI-Generated Custom Movies",
+    "description": "New Alexa feature can suggest products before customers realize they need them.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?amazon,shopping",
+    "sourceUrl": "https://example.com/amazon-ai-shopping",
+    "category": "Business",
+    "tags": [
+      "Amazon",
+      "#AI",
+      "Retail"
+    ],
+    "trending": false,
+    "status": true,
+    "publishedAt": "2023-07-14T10:15:00Z"
+  },
+  {
+    "_id": "bus13",
+    "title": "Toyota’s Solid-State Battery Cars Hit 800-Mile Range",
+    "description": "Federal Reserve raises interest rates for the tenth consecutive time to combat persistent inflation.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?federal,reserve",
+    "sourceUrl": "https://example.com/fed-rate-hike",
+    "category": "Business",
+    "tags": [
+      "Economy",
+      "Finance",
+      "Banking"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-15T16:45:00Z"
+  },
+  {
+    "_id": "bus14",
+    "title": "BlackRock Launches AI-Managed Hedge Fund",
+    "description": "New Alexa feature can suggest products before customers realize they need them.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?amazon,shopping",
+    "sourceUrl": "https://example.com/amazon-ai-shopping",
+    "category": "Business",
+    "tags": [
+      "Amazon",
+      "#AI",
+      "Retail"
+    ],
+    "trending": false,
+    "status": true,
+    "publishedAt": "2023-07-14T10:15:00Z"
+  },
+  {
+    "_id": "bus15",
+    "title": "Starbucks Tests Robotic Baristas in NYC",
+    "description": "New Alexa feature can suggest products before customers realize they need them.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?amazon,shopping",
+    "sourceUrl": "https://example.com/amazon-ai-shopping",
+    "category": "Business",
+    "tags": [
+      "Amazon",
+      "#AI",
+      "Retail"
+    ],
+    "trending": false,
+    "status": true,
+    "publishedAt": "2023-07-14T10:15:00Z"
+  },
+  {
+    "_id": "sci1",
+    "title": "Human Head Transplant Successfully Performed on Monkey",
+    "description": "Astronomers detect clear signs of water vapor in atmosphere of planet 120 light-years away.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?telescope,space",
+    "sourceUrl": "https://example.com/james-webb-water",
+    "category": "Science",
+    "tags": [
+      "Astronomy",
+      "NASA",
+      "Exoplanets"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-13T18:00:00Z"
+  },
+  {
+    "_id": "sci2",
+    "title": "Antarctica’s ‘Doomsday Glacier’ Melting Faster Than Predicted",
+    "description": "Astronomers detect clear signs of water vapor in atmosphere of planet 120 light-years away.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?telescope,space",
+    "sourceUrl": "https://example.com/james-webb-water",
+    "category": "Science",
+    "tags": [
+      "Astronomy",
+      "NASA",
+      "Exoplanets"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-13T18:00:00Z"
+  },
+  {
+    "_id": "sci3",
+    "title": "First Synthetic Human Embryo Created Without Sperm or Egg",
+    "description": "Astronomers detect clear signs of water vapor in atmosphere of planet 120 light-years away.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?telescope,space",
+    "sourceUrl": "https://example.com/james-webb-water",
+    "category": "Science",
+    "tags": [
+      "Astronomy",
+      "NASA",
+      "Exoplanets"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-13T18:00:00Z"
+  },
+  {
+    "_id": "sci4",
+    "title": "NASA Confirms Microbial Life on Mars",
+    "description": "Astronomers detect clear signs of water vapor in atmosphere of planet 120 light-years away.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?telescope,space",
+    "sourceUrl": "https://example.com/james-webb-water",
+    "category": "Science",
+    "tags": [
+      "Astronomy",
+      "NASA",
+      "Exoplanets"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-13T18:00:00Z"
+  },
+  {
+    "_id": "sci5",
+    "title": "CRISPR Cures Genetic Blindness in Landmark Trial",
+    "description": "Astronomers detect clear signs of water vapor in atmosphere of planet 120 light-years away.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?telescope,space",
+    "sourceUrl": "https://example.com/james-webb-water",
+    "category": "Science",
+    "tags": [
+      "Astronomy",
+      "NASA",
+      "Exoplanets"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-13T18:00:00Z"
+  },
+  {
+    "_id": "sci6",
+    "title": "Time Crystals Used in Quantum Computing Breakthrough",
+    "description": "Astronomers detect clear signs of water vapor in atmosphere of planet 120 light-years away.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?telescope,space",
+    "sourceUrl": "https://example.com/james-webb-water",
+    "category": "Science",
+    "tags": [
+      "Astronomy",
+      "NASA",
+      "Exoplanets"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-13T18:00:00Z"
+  },
+  {
+    "_id": "sci7",
+    "title": "Scientists Teleport Quantum Data 1,000 Miles",
+    "description": "Astronomers detect clear signs of water vapor in atmosphere of planet 120 light-years away.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?telescope,space",
+    "sourceUrl": "https://example.com/james-webb-water",
+    "category": "Science",
+    "tags": [
+      "Astronomy",
+      "NASA",
+      "Exoplanets"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-13T18:00:00Z"
+  },
+  {
+    "_id": "sci8",
+    "title": "Lab-Grown Meat Approved for Supermarkets",
+    "description": "Astronomers detect clear signs of water vapor in atmosphere of planet 120 light-years away.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?telescope,space",
+    "sourceUrl": "https://example.com/james-webb-water",
+    "category": "Science",
+    "tags": [
+      "Astronomy",
+      "NASA",
+      "Exoplanets"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-13T18:00:00Z"
+  },
+  {
+    "_id": "sci9",
+    "title": "Neutrino Detector Finds Evidence of Parallel Universe",
+    "description": "Astronomers detect clear signs of water vapor in atmosphere of planet 120 light-years away.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?telescope,space",
+    "sourceUrl": "https://example.com/james-webb-water",
+    "category": "Science",
+    "tags": [
+      "Astronomy",
+      "NASA",
+      "Exoplanets"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-13T18:00:00Z"
+  },
+  {
+    "_id": "sci10",
+    "title": "Human Brain Connected to Internet in Real-Time",
+    "description": "Astronomers detect clear signs of water vapor in atmosphere of planet 120 light-years away.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?telescope,space",
+    "sourceUrl": "https://example.com/james-webb-water",
+    "category": "Science",
+    "tags": [
+      "Astronomy",
+      "NASA",
+      "Exoplanets"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-13T18:00:00Z"
+  },
+  {
+    "_id": "env1",
+    "title": "World’s Largest Carbon Capture Plant Opens in Iceland",
+    "description": "Northern sections show highest coral cover in 36 years of monitoring despite climate threats.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?coral,reef",
+    "sourceUrl": "https://example.com/reef-recovery",
+    "category": "Environment",
+    "tags": [
+      "Conservation",
+      "Oceans",
+      "Climate"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-11T12:30:00Z"
+  },
+  {
+    "_id": "env2",
+    "title": "UN Declares Ocean Plastic Crisis ‘Worse Than Predicted",
+    "description": "Northern sections show highest coral cover in 36 years of monitoring despite climate threats.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?coral,reef",
+    "sourceUrl": "https://example.com/reef-recovery",
+    "category": "Environment",
+    "tags": [
+      "Conservation",
+      "Oceans",
+      "Climate"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-11T12:30:00Z"
+  },
+  {
+    "_id": "env3",
+    "title": "Solar Panel Roads Power Entire Cities in France",
+    "description": "Northern sections show highest coral cover in 36 years of monitoring despite climate threats.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?coral,reef",
+    "sourceUrl": "https://example.com/reef-recovery",
+    "category": "Environment",
+    "tags": [
+      "Conservation",
+      "Oceans",
+      "Climate"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-11T12:30:00Z"
+  },
+  {
+    "_id": "env4",
+    "title": "Last Northern White Rhino Cloned Back from Extinction",
+    "description": "Northern sections show highest coral cover in 36 years of monitoring despite climate threats.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?coral,reef",
+    "sourceUrl": "https://example.com/reef-recovery",
+    "category": "Environment",
+    "tags": [
+      "Conservation",
+      "Oceans",
+      "Climate"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-11T12:30:00Z"
+  },
+  {
+    "_id": "env5",
+    "title": "Floating Cities Built to Combat Rising Sea Levels",
+    "description": "Northern sections show highest coral cover in 36 years of monitoring despite climate threats.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?coral,reef",
+    "sourceUrl": "https://example.com/reef-recovery",
+    "category": "Environment",
+    "tags": [
+      "Conservation",
+      "Oceans",
+      "Climate"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-11T12:30:00Z"
+  },
+  {
+    "_id": "env6",
+    "title": "Global Ban on Single-Use Plastics Takes Effect",
+    "description": "Northern sections show highest coral cover in 36 years of monitoring despite climate threats.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?coral,reef",
+    "sourceUrl": "https://example.com/reef-recovery",
+    "category": "Environment",
+    "tags": [
+      "Conservation",
+      "Oceans",
+      "Climate"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-11T12:30:00Z"
+  },
+  {
+    "_id": "env7",
+    "title": "Bees Added to Endangered Species List",
+    "description": "Northern sections show highest coral cover in 36 years of monitoring despite climate threats.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?coral,reef",
+    "sourceUrl": "https://example.com/reef-recovery",
+    "category": "Environment",
+    "tags": [
+      "Conservation",
+      "Oceans",
+      "Climate"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-11T12:30:00Z"
+  },
+  {
+    "_id": "health1",
+    "title": "Cancer Vaccine Shows 95% Efficacy in Trials",
+    "description": "FDA approves Leqembi, the first treatment proven to modify disease progression.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?alzheimers,brain",
+    "sourceUrl": "https://example.com/alzheimers-drug",
+    "category": "Health",
+    "tags": [
+      "Medicine",
+      "Neuroscience",
+      "FDA"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-10T08:45:00Z"
+  },
+  {
+    "_id": "health2",
+    "title": "FDA Approves First Anti-Aging Pill",
+    "description": "FDA approves Leqembi, the first treatment proven to modify disease progression.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?alzheimers,brain",
+    "sourceUrl": "https://example.com/alzheimers-drug",
+    "category": "Health",
+    "tags": [
+      "Medicine",
+      "Neuroscience",
+      "FDA"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-10T08:45:00Z"
+  },
+  {
+    "_id": "health3",
+    "title": "Brain Implant Restores Movement to Paralyzed Patients",
+    "description": "FDA approves Leqembi, the first treatment proven to modify disease progression.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?alzheimers,brain",
+    "sourceUrl": "https://example.com/alzheimers-drug",
+    "category": "Health",
+    "tags": [
+      "Medicine",
+      "Neuroscience",
+      "FDA"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-10T08:45:00Z"
+  },
+  {
+    "_id": "health4",
+    "title": "Lab-Grown Organs Transplanted into Humans",
+    "description": "FDA approves Leqembi, the first treatment proven to modify disease progression.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?alzheimers,brain",
+    "sourceUrl": "https://example.com/alzheimers-drug",
+    "category": "Health",
+    "tags": [
+      "Medicine",
+      "Neuroscience",
+      "FDA"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-10T08:45:00Z"
+  },
+  {
+    "_id": "health5",
+    "title": "COVID-25 Variant Evades All Vaccines",
+    "description": "FDA approves Leqembi, the first treatment proven to modify disease progression.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?alzheimers,brain",
+    "sourceUrl": "https://example.com/alzheimers-drug",
+    "category": "Health",
+    "tags": [
+      "Medicine",
+      "Neuroscience",
+      "FDA"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-10T08:45:00Z"
+  },
+  {
+    "_id": "health6",
+    "title": "CRISPR Used to Cure HIV in Human Trial",
+    "description": "FDA approves Leqembi, the first treatment proven to modify disease progression.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?alzheimers,brain",
+    "sourceUrl": "https://example.com/alzheimers-drug",
+    "category": "Health",
+    "tags": [
+      "Medicine",
+      "Neuroscience",
+      "FDA"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-10T08:45:00Z"
+  },
+  {
+    "_id": "health7",
+    "title": "AI Predicts Heart Attacks 5 Years in Advance",
+    "description": "FDA approves Leqembi, the first treatment proven to modify disease progression.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?alzheimers,brain",
+    "sourceUrl": "https://example.com/alzheimers-drug",
+    "category": "Health",
+    "tags": [
+      "Medicine",
+      "Neuroscience",
+      "FDA"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-10T08:45:00Z"
+  },
+  {
+    "_id": "ent1",
+    "title": "Avatar 3 Breaks Opening Weekend Record",
+    "description": "Greta Gerwig's film earns $155 million in opening weekend, biggest debut for female director.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?barbie,movie",
+    "sourceUrl": "https://example.com/barbie-box-office",
+    "category": "Entertainment",
+    "tags": [
+      "Movies",
+      "Warner Bros",
+      "Margot Robbie"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-09T20:15:00Z"
+  },
+  {
+    "_id": "ent2",
+    "title": "Netflix’s AI-Generated Show Wins Emmy",
+    "description": "Greta Gerwig's film earns $155 million in opening weekend, biggest debut for female director.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?barbie,movie",
+    "sourceUrl": "https://example.com/barbie-box-office",
+    "category": "Entertainment",
+    "tags": [
+      "Movies",
+      "Warner Bros",
+      "Margot Robbie"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-09T20:15:00Z"
+  },
+  {
+    "_id": "ent3",
+    "title": "Virtual Reality Concerts Generate $1B Revenue",
+    "description": "Greta Gerwig's film earns $155 million in opening weekend, biggest debut for female director.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?barbie,movie",
+    "sourceUrl": "https://example.com/barbie-box-office",
+    "category": "Entertainment",
+    "tags": [
+      "Movies",
+      "Warner Bros",
+      "Margot Robbie"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-09T20:15:00Z"
+  },
+  {
+    "_id": "ent4",
+    "title": "Taylor Swift’s Hologram Tour Sells Out Worldwide",
+    "description": "Greta Gerwig's film earns $155 million in opening weekend, biggest debut for female director.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?barbie,movie",
+    "sourceUrl": "https://example.com/barbie-box-office",
+    "category": "Entertainment",
+    "tags": [
+      "Movies",
+      "Warner Bros",
+      "Margot Robbie"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-09T20:15:00Z"
+  },
+  {
+    "_id": "ent5",
+    "title": "Disney’s AI Revives Carrie Fisher for New Star Wars Film",
+    "description": "Greta Gerwig's film earns $155 million in opening weekend, biggest debut for female director.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?barbie,movie",
+    "sourceUrl": "https://example.com/barbie-box-office",
+    "category": "Entertainment",
+    "tags": [
+      "Movies",
+      "Warner Bros",
+      "Margot Robbie"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-09T20:15:00Z"
+  },
+  {
+    "_id": "ent6",
+    "title": "GTA 7 Released as Metaverse Experience",
+    "description": "Greta Gerwig's film earns $155 million in opening weekend, biggest debut for female director.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?barbie,movie",
+    "sourceUrl": "https://example.com/barbie-box-office",
+    "category": "Entertainment",
+    "tags": [
+      "Movies",
+      "Warner Bros",
+      "Margot Robbie"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-09T20:15:00Z"
+  },
+  {
+    "_id": "sports1",
+    "title": "2026 World Cup to Feature Robot Referees",
+    "description": "Argentine superstar signs 2.5-year contract worth $50-60 million annually.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?messi,soccer",
+    "sourceUrl": "https://example.com/messi-miami",
+    "category": "Sports",
+    "tags": [
+      "Soccer",
+      "MLS",
+      "Transfer"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-08T17:30:00Z"
+  },
+  {
+    "_id": "sports2",
+    "title": "LeBron James Signs $500M Lifetime NBA Contract",
+    "description": "Argentine superstar signs 2.5-year contract worth $50-60 million annually.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?messi,soccer",
+    "sourceUrl": "https://example.com/messi-miami",
+    "category": "Sports",
+    "tags": [
+      "Soccer",
+      "MLS",
+      "Transfer"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-08T17:30:00Z"
+  },
+  {
+    "_id": "sports3",
+    "title": "Olympics Adds Esports as Medal Event",
+    "description": "Argentine superstar signs 2.5-year contract worth $50-60 million annually.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?messi,soccer",
+    "sourceUrl": "https://example.com/messi-miami",
+    "category": "Sports",
+    "tags": [
+      "Soccer",
+      "MLS",
+      "Transfer"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-08T17:30:00Z"
+  },
+  {
+    "_id": "sports4",
+    "title": "Female QB Drafted #1 in NFL for First Time",
+    "description": "Argentine superstar signs 2.5-year contract worth $50-60 million annually.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?messi,soccer",
+    "sourceUrl": "https://example.com/messi-miami",
+    "category": "Sports",
+    "tags": [
+      "Soccer",
+      "MLS",
+      "Transfer"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-08T17:30:00Z"
+  },
+  {
+    "_id": "sports5",
+    "title": "Saudi Arabia Wins 2030 World Cup Bid",
+    "description": "Argentine superstar signs 2.5-year contract worth $50-60 million annually.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?messi,soccer",
+    "sourceUrl": "https://example.com/messi-miami",
+    "category": "Sports",
+    "tags": [
+      "Soccer",
+      "MLS",
+      "Transfer"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-08T17:30:00Z"
+  },
+  {
+    "_id": "sports6",
+    "title": "Tiger Woods Wins Masters at Age 52",
+    "description": "Argentine superstar signs 2.5-year contract worth $50-60 million annually.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?messi,soccer",
+    "sourceUrl": "https://example.com/messi-miami",
+    "category": "Sports",
+    "tags": [
+      "Soccer",
+      "MLS",
+      "Transfer"
+    ],
+    "trending": true,
+    "status": true,
+    "publishedAt": "2023-07-08T17:30:00Z"
+  },
+  {
+    "_id": "edu1",
+    "title": "Harvard Offers Full Degrees in the Metaverse",
+    "description": "Ivy League school ends preferential treatment for children of alumni following affirmative action decision.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?harvard,campus",
+    "sourceUrl": "https://example.com/harvard-legacy",
+    "category": "Education",
+    "tags": [
+      "Universities",
+      "Admissions",
+      "Policy"
+    ],
+    "trending": false,
+    "status": true,
+    "publishedAt": "2023-07-07T13:10:00Z"
+  },
+  {
+    "_id": "edu2",
+    "title": "AI Teachers Replace 30% of Professors by 2030",
+    "description": "Ivy League school ends preferential treatment for children of alumni following affirmative action decision.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?harvard,campus",
+    "sourceUrl": "https://example.com/harvard-legacy",
+    "category": "Education",
+    "tags": [
+      "Universities",
+      "Admissions",
+      "Policy"
+    ],
+    "trending": false,
+    "status": true,
+    "publishedAt": "2023-07-07T13:10:00Z"
+  },
+  {
+    "_id": "edu3",
+    "title": "US Eliminates Student Loan Debt",
+    "description": "Ivy League school ends preferential treatment for children of alumni following affirmative action decision.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?harvard,campus",
+    "sourceUrl": "https://example.com/harvard-legacy",
+    "category": "Education",
+    "tags": [
+      "Universities",
+      "Admissions",
+      "Policy"
+    ],
+    "trending": false,
+    "status": true,
+    "publishedAt": "2023-07-07T13:10:00Z"
+  },
+  {
+    "_id": "edu4",
+    "title": "China Tops Global Education Rankings Again",
+    "description": "Ivy League school ends preferential treatment for children of alumni following affirmative action decision.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?harvard,campus",
+    "sourceUrl": "https://example.com/harvard-legacy",
+    "category": "Education",
+    "tags": [
+      "Universities",
+      "Admissions",
+      "Policy"
+    ],
+    "trending": false,
+    "status": true,
+    "publishedAt": "2023-07-07T13:10:00Z"
+  },
+  {
+    "_id": "edu5",
+    "title": "Coding Becomes Mandatory in Elementary Schools",
+    "description": "Ivy League school ends preferential treatment for children of alumni following affirmative action decision.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?harvard,campus",
+    "sourceUrl": "https://example.com/harvard-legacy",
+    "category": "Education",
+    "tags": [
+      "Universities",
+      "Admissions",
+      "Policy"
+    ],
+    "trending": false,
+    "status": true,
+    "publishedAt": "2023-07-07T13:10:00Z"
+  },
+  {
+    "_id": "edu6",
+    "title": "First University on Mars Announced",
+    "description": "Ivy League school ends preferential treatment for children of alumni following affirmative action decision.",
+    "imageUrl": "https://source.unsplash.com/random/600x400/?harvard,campus",
+    "sourceUrl": "https://example.com/harvard-legacy",
+    "category": "Education",
+    "tags": [
+      "Universities",
+      "Admissions",
+      "Policy"
+    ],
+    "trending": false,
+    "status": true,
+    "publishedAt": "2023-07-07T13:10:00Z"
+  }
+]
