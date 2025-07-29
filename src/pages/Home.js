@@ -69,6 +69,8 @@ const Home = () => {
 
           setLoading(false);
           return;
+        }else{
+          console.log("Using API data");
         }
 
         // If no local data, fetch from API
