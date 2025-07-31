@@ -33,9 +33,6 @@ const ArticleDetail = () => {
 
   return (
     <div className="article-detail">
-      <button className="back-button" onClick={() => navigate(-1)}>
-        ← Back to previous page
-      </button>
       <article>
         <header className="article-header">
           <h1>{article.title}</h1>
@@ -100,6 +97,9 @@ const ArticleDetail = () => {
           </div>
         )}
       </article>
+      <button className="back-button" onClick={() => navigate(-1)}>
+        ← Back to previous page
+      </button>
     </div>
   );
 };
