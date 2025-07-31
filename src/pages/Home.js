@@ -32,7 +32,8 @@ const Home = () => {
     "Sports",
     "Education",
     "Stories",
-    "Information"
+    "Information",
+    "Updates"
   ];
 
   useEffect(() => {
