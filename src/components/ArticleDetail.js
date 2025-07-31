@@ -33,6 +33,9 @@ const ArticleDetail = () => {
 
   return (
     <div className="article-detail">
+      <button className="back-button" onClick={() => navigate(-1)}>
+        ← Back to previous page
+      </button>
       <article>
         <header className="article-header">
           <h1>{article.title}</h1>
@@ -66,7 +69,7 @@ const ArticleDetail = () => {
                 format="rectangle"
                 style={{ display: "block" }}
               />
-              <p>{article.description}</p>
+              <p className="ad-containerdesc">{article.description}</p>
             </div>
           )}
           {article.content && <p>{article.content}</p>}
@@ -97,10 +100,6 @@ const ArticleDetail = () => {
           </div>
         )}
       </article>
-
-      <button className="back-button" onClick={() => navigate(-1)}>
-        ← Back to previous page
-      </button>
     </div>
   );
 };

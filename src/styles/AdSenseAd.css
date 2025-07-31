@@ -31,8 +31,20 @@
   height: 250px;
 }
 
+.ad-containerdesc{
+  text-align: left;
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
+  .ad-container {
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .ad-box.horizontal {
     height: 60px;
     font-size: 12px;

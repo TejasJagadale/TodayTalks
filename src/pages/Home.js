@@ -30,7 +30,9 @@ const Home = () => {
     "Health",
     "Entertainment",
     "Sports",
-    "Education"
+    "Education",
+    "Stories",
+    "Information"
   ];
 
   useEffect(() => {
@@ -111,6 +113,9 @@ const Home = () => {
             status: article.status !== false
           }));
         });
+
+        console.log(combinedArticles);
+        
 
         setAllArticles(combinedArticles);
 
