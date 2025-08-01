@@ -25,11 +25,7 @@ const Home = () => {
   const categories = [
     "Technology",
     "Business",
-    "Science",
-    "Environment",
     "Health",
-    "Entertainment",
-    "Sports",
     "Education",
     "Stories",
     "Information",
