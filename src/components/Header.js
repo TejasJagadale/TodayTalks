@@ -43,7 +43,7 @@ const Header = () => {
         <div className="container">
           <NavLink to="/" className="logo">
             <h1>TodayTalks</h1>
-            <span className="subbtext">Your trusted news source</span>
+            {/* <span className="subbtext">Your trusted news source</span> */}
           </NavLink>
           
           <div className="trending-topics">

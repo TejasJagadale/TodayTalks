@@ -1,5 +1,3 @@
-//
-
 import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { format } from "date-fns";
@@ -11,10 +9,6 @@ const ArticleDetail = () => {
   const article = location.state?.article;
   const navigate = useNavigate();
 
-  const handleClick = () => {
-    navigate(`/article/${article._id}`, { state: { article } });
-  };
-
   if (!article) {
     return (
       <div className="not-found">
@@ -25,29 +19,65 @@ const ArticleDetail = () => {
     );
   }
 
-  // Fallback to publishedAt if createdAt doesn't exist
   const articleDate = article.createdAt || article.publishedAt;
   const formattedDate = articleDate
     ? format(new Date(articleDate), "MMMM d, yyyy")
     : "Date not available";
 
+  // Process description into paragraphs with proper formatting
+  const renderDescription = () => {
+    if (!article.description) return null;
+    
+    return article.description.split('\n').map((paragraph, index) => {
+      if (!paragraph.trim()) return null;
+      
+      // Check if paragraph is likely a subheading (short, ends with colon, etc.)
+      const isSubheading = paragraph.length < 60 && (paragraph.endsWith(':') || !paragraph.includes('.'));
+      
+      return (
+        <React.Fragment key={index}>
+          {isSubheading ? (
+            <h3 className="article-subheading">{paragraph}</h3>
+          ) : (
+            <p className="article-paragraph">{paragraph}</p>
+          )}
+          {/* Add ad after every 3rd paragraph */}
+          {index % 3 === 2 && (
+            <div className="paragraph-ad">
+              <AdSenseAd 
+                slotId={`paragraph_ad_${index}`}
+                format="rectangle"
+              />
+            </div>
+          )}
+        </React.Fragment>
+      );
+    });
+  };
+
   return (
-    <div className="article-detail">
+    <div className="article-detail news-article">
       <article>
         <header className="article-header">
-          <h1>{article.title}</h1>
+          <div className="article-category">{article.category}</div>
+          <h1 className="article-title">{article.title}</h1>
           <div className="article-meta">
             <span className="publication-date">{formattedDate}</span>
+            {article.author && (
+              <span className="article-author">By {article.author}</span>
+            )}
             {article.trending && (
               <span className="trending-badge">🔥 Trending</span>
             )}
-            {article.category && (
-              <span className="category-badge">{article.category}</span>
-            )}
           </div>
+          {article.summary && (
+            <div className="article-summary">
+              <p>{article.summary}</p>
+            </div>
+          )}
         </header>
 
-        <div className="card-image1">
+        <div className="article-featured-image">
           <img
             src={article.imageUrl}
             alt={article.title}
@@ -56,50 +86,68 @@ const ArticleDetail = () => {
               e.target.alt = "Default news image";
             }}
           />
+          {article.imageCaption && (
+            <figcaption className="image-caption">
+              {article.imageCaption}
+            </figcaption>
+          )}
         </div>
 
-        <div className="article-content">
-          {article.description && (
-            <div className="ad-container">
-              <AdSenseAd
-                slotId="article_content_ad"
-                format="rectangle"
-                style={{ display: "block" }}
-              />
-              <p className="ad-containerdesc">{article.description}</p>
+        <div className="article-body">
+          <div className="article-content">{renderDescription()}</div>
+
+          {article.content && (
+            <div className="article-fulltext">
+              {article.content.split("\n").map((para, i) => (
+                <p key={i}>{para}</p>
+              ))}
             </div>
           )}
-          {article.content && <p>{article.content}</p>}
+
+          <div className="article-end-ad">
+            <AdSenseAd slotId="article_end_ad" format="rectangle" />
+          </div>
         </div>
 
         {article.sourceUrl && (
-          <div className="source-link">
+          <div className="article-source">
+            <h4>Source:</h4>
             <a
               href={article.sourceUrl}
               target="_blank"
               rel="noopener noreferrer"
+              className="source-link"
             >
-              Read full story at source
+              {new URL(article.sourceUrl).hostname}
             </a>
           </div>
         )}
 
         {article.tags?.length > 0 && (
           <div className="article-tags">
-            <h3>Related Topics:</h3>
+            <h4>Related Topics:</h4>
             <div className="tags-container">
               {article.tags.map((tag, index) => (
-                <span key={index} className="tag">
-                  #{tag}
-                </span>
+                <p
+                  style={{
+                    background: index % 2 === 0 ? "lightblue" : "lightgreen",
+                    padding:'2px 10px',
+                    borderRadius: "5px"
+                  }}
+                >
+                  {tag}
+                </p>
               ))}
             </div>
           </div>
         )}
       </article>
-      <button className="back-button" onClick={() => navigate(-1)}>
-        ← Back to previous page
-      </button>
+
+      <div className="article-footer">
+        <button className="back-button" onClick={() => navigate(-1)}>
+          ← Back to previous page
+        </button>
+      </div>
     </div>
   );
 };
