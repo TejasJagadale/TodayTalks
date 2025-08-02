@@ -76,7 +76,7 @@ const Home = () => {
         console.log("Fetching from API");
         const promises = categories.map(async (category) => {
           const response = await fetch(
-            `https://todaytalkserver.onrender.com/api/contents/${category}`
+            `https://ttofficial.onrender.com/api/contents/${category}`
           );
 
           if (!response.ok) {
@@ -540,7 +540,7 @@ export default Home;
 //       try {
 //         setLoading(true);
 //         const promises = categories.map(category =>
-//           fetch(`https://todaytalkserver.onrender.com/api/contents/${category}`)
+//           fetch(`https://ttofficial.onrender.com/api/contents/${category}`)
 //             .then(res => res.json())
 //             .then(data => data.map(article => ({ ...article, category })))
 //         );
