@@ -68,7 +68,7 @@ const Home = () => {
 
           setLoading(false);
           return;
-        }else{
+        } else {
           console.log("Using API data");
         }
 
@@ -112,7 +112,6 @@ const Home = () => {
         });
 
         console.log(combinedArticles);
-        
 
         setAllArticles(combinedArticles);
 
@@ -289,6 +288,37 @@ const Home = () => {
     <div className={`home-container ${categoryName ? "category-view" : ""}`}>
       <AdSenseLoader />
 
+      {/* Add the breaking news marquee here */}
+      <div className="breaking-news-container">
+        <div className="breaking-news-label">BREAKING:</div>
+        <marquee
+          className="breaking-news-marquee"
+          behavior="scroll"
+          direction="left"
+        >
+          {categories
+            .map((category) => {
+              // Find the first trending article in this category
+              const trendingArticle = allArticles.find(
+                (article) =>
+                  article.category === category &&
+                  article.trending === true &&
+                  article.status !== false
+              );
+
+              return trendingArticle ? (
+                <span
+                  key={`${category}-${trendingArticle.id}`}
+                  className="marquee-item"
+                >
+                  {category}: {trendingArticle.title} •
+                </span>
+              ) : null;
+            })
+            .filter(Boolean)}
+        </marquee>
+      </div>
+
       <div className="category-selector-container">
         <div className="category-selector">
           {categories.map((category) => (
@@ -329,7 +359,6 @@ const Home = () => {
       </div>
 
       <div className={`content-container ${fadeState}`}>
-
         <main className="home-content">
           <div className="main-content">
             {featuredArticles.length > 0 && (

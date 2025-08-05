@@ -10,8 +10,8 @@ const Footer = () => {
           <div className="footer-column">
             <h3>TodayTalks</h3>
             <p>
-              Your trusted source for the latest news and in-depth reporting from
-              around the world.
+              Your trusted source for the latest news and in-depth reporting
+              from around the world.
             </p>
           </div>
           {/* <div className="footer-column">
@@ -64,17 +64,24 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} TodayTalks. All rights reserved.
           </p>
           <div className="social-links">
-            <a href="https://facebook.com" aria-label="Facebook">
-              <i className="icon-facebook"></i>
+            <a
+              href="https://www.facebook.com/profile.php?id=61563928347546#"
+              aria-label="Facebook"
+            >
+              <i className="fab fa-facebook"></i>
             </a>
-            <a href="https://twitter.com" aria-label="Twitter">
-              <i className="icon-twitter"></i>
+            <a
+              href="https://www.youtube.com/channel/UCrPb4cMJS9FqHIgv4_HwMEA"
+              aria-label="YouTube"
+            >
+              <i className="fab fa-youtube"></i>
             </a>
-            <a href="https://instagram.com" aria-label="Instagram">
-              <i className="icon-instagram"></i>
-            </a>
-            <a href="https://linkedin.com" aria-label="LinkedIn">
-              <i className="icon-linkedin"></i>
+
+            <a
+              href="https://www.instagram.com/todaytalks4/"
+              aria-label="Instagram"
+            >
+              <i className="fab fa-instagram"></i>
             </a>
           </div>
         </div>

@@ -1,4 +1,4 @@
-  /* Base Styles */
+/* Base Styles */
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
@@ -12,7 +12,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 90%;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
 }
 
@@ -44,7 +44,7 @@ body {
   display: flex;
   list-style: none;
   padding: 0;
-  
+
   /* flex-wrap: wrap; */
 }
 

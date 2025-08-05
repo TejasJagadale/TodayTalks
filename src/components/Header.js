@@ -34,7 +34,7 @@ const Header = () => {
             })}
           </div>
           <div className="header-links">
-            <a href="/about">About</a>
+            {/* <a href="/about">About</a> */}
             <a href="/contact">Contact</a>
           </div>
         </div>
@@ -42,8 +42,9 @@ const Header = () => {
       <div className="header-main">
         <div className="container">
           <NavLink to="/" className="logo">
-            <h1>TodayTalks</h1>
+            {/* <h1>TodayTalks</h1> */}
             {/* <span className="subbtext">Your trusted news source</span> */}
+            <img src="/images/todaytalks.png" alt="nothing" className="ttlogo"/>
           </NavLink>
           
           <div className="trending-topics">

@@ -51,7 +51,7 @@ const TermsAndConditions = () => {
         
         <section>
           <h2>8. Governing Law</h2>
-          <p>These terms shall be governed by the laws of [Your Country/State] without regard to its conflict of law provisions.</p>
+          <p>These terms shall be governed by the laws of India/TamilNadu without regard to its conflict of law provisions.</p>
         </section>
         
         <section>

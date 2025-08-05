@@ -38,10 +38,10 @@ const PrivacyPolicy = () => (
         .
       </p>
     </section>
-    <p>
+    {/* <p>
       For GDPR compliance, contact us at privacy@yourdomain.com to request data
       access or deletion.
-    </p>
+    </p> */}
   </div>
 );
 

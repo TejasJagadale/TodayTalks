@@ -56,7 +56,7 @@
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid #1a1a2e;
   padding: 1.5rem 0;
 }
 
@@ -78,7 +78,7 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #1a1a2e;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,7 +86,8 @@
 }
 
 .social-links a:hover {
-  background-color: var(--accent-color);
+  background-color: white;
+  color: #1a1a2e;
   transform: translateY(-3px);
 }
 

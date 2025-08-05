@@ -87,6 +87,35 @@ img {
   overflow: hidden;
 }
 
+/* Breaking News Marquee Styles */
+.breaking-news-container {
+  background-color: #e94560;
+  color: white;
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.breaking-news-label {
+  background-color: #1a1a2e;
+  padding: 5px 15px;
+  margin-right: 15px;
+  white-space: nowrap;
+}
+
+.breaking-news-marquee {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.marquee-item {
+  margin-right: 30px;
+  white-space: nowrap;
+}
+
 @keyframes modalFadeIn {
   from {
     opacity: 0;
@@ -273,8 +302,8 @@ img {
 
 /* ===== UTILITY CLASSES ===== */
 .container {
-  width: 100%;
-  max-width: 1200px;
+  /* width: 100%; */
+  /* max-width: 1200px; */
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -912,6 +941,19 @@ img {
 }
 
 @media (min-width: 768px) {
+  .breaking-news-container {
+    font-size: 12px;
+    padding: 5px 0;
+  }
+
+  .breaking-news-label {
+    padding: 3px 10px;
+    margin-right: 10px;
+  }
+
+  .marquee-item {
+    margin-right: 20px;
+  }
   .trending-modal-content {
     max-height: 85vh;
   }

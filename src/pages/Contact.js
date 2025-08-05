@@ -11,15 +11,20 @@ const Contact = () => {
           <h2>Editorial Inquiries</h2>
           <p>
             Email:{" "}
-            <a href="mailto:todaytalks.office@gmail.com">todaytalks.office@gmail.com</a>
+            <a href="mailto:todaytalks.office@gmail.com">
+              todaytalks.office@gmail.com
+            </a>
           </p>
-          <p>Phone: +1 (555) 123-4567</p>
+          <p>Phone: +91 8508508590</p>
         </section>
 
         <section>
           <h2>Advertising</h2>
           <p>
-            Email: <a href="todaytalks.office@gmail.com">todaytalks.office@gmail.com</a>
+            Email:{" "}
+            <a href="todaytalks.office@gmail.com">
+              todaytalks.office@gmail.com
+            </a>
           </p>
           {/* <p>
             Media Kit: <a href="/media-kit.pdf">Download PDF</a>
@@ -29,13 +34,13 @@ const Contact = () => {
         <section>
           <h2>Mailing Address</h2>
           <address>
-            TodatTalks Inc.
+            MPeoples Business Solutions Pvt Ltd
             <br />
-            123 Journalism Way
+            No 56/3-1 Ranga Nagar, 3rd Cross Street, Suramangalam
             <br />
-            San Francisco, CA 94107
+            Salem-636005
             <br />
-            USA
+            TamilNadu
           </address>
         </section>
       </div>
