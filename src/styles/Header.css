@@ -169,7 +169,7 @@
   .ttlogo {
     height: 60px;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
   .subbtext {
     display: none;
