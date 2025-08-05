@@ -329,16 +329,6 @@ const Home = () => {
       </div>
 
       <div className={`content-container ${fadeState}`}>
-        {/* <div className="breaking-news-banner">
-          <span className="breaking-label">BREAKING</span>
-          <span className="breaking-text">
-            {selectedCategory === "Trending"
-              ? "Trending across all categories"
-              : selectedTag
-              ? `Tagged with "${selectedTag}" in ${selectedCategory}`
-              : `Latest in ${selectedCategory}`}
-          </span>
-        </div> */}
 
         <main className="home-content">
           <div className="main-content">
