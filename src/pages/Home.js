@@ -22,6 +22,16 @@ const Home = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [error, setError] = useState(null);
 
+  // Gold price state
+  const [goldPrices, setGoldPrices] = useState({
+    india24k: "Loading...",
+    india22k: "Loading...",
+    tamilnadu24k: "Loading...",
+    tamilnadu22k: "Loading...",
+    lastUpdated: ""
+  });
+  const [goldLoading, setGoldLoading] = useState(true);
+
   const categories = [
     "Technology",
     "Business",
@@ -39,6 +49,144 @@ const Home = () => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+  // Updated FREE gold price implementation
+  useEffect(() => {
+    const fetchGoldPrices = async () => {
+      try {
+        // Option 1: GoldPrice.org (free JSON API)
+        const response = await fetch(
+          "https://data-asg.goldprice.org/dbXRates/INR"
+        );
+        const data = await response.json();
+        console.log(data);
+
+        // Price per troy ounce (31.1 grams) to per gram
+        const pricePerGram = data.items[0].xauPrice / 31.1;
+        const tnPremium = 1.04; // 4% Tamil Nadu premium
+
+        setGoldPrices({
+          india24k: `₹${Math.round(pricePerGram)}/g`,
+          india22k: `₹${Math.round(pricePerGram * 0.916)}/g`,
+          tamilnadu24k: `₹${Math.round(pricePerGram * tnPremium)}/g`,
+          tamilnadu22k: `₹${Math.round(pricePerGram * 0.916 * tnPremium)}/g`,
+          lastUpdated: new Date().toLocaleTimeString()
+        });
+      } catch (error) {
+        console.error("Error fetching gold prices:", error);
+
+        // Option 2: Fallback to HTML scraping (no API needed)
+        try {
+          const scrapedPrices = await fetchGoldPricesFromWebPage();
+          setGoldPrices(scrapedPrices);
+        } catch (scrapeError) {
+          console.error("Scraping failed:", scrapeError);
+          setGoldPrices({
+            india24k: "Check today's rate",
+            india22k: "Check today's rate",
+            tamilnadu24k: "Check today's rate",
+            tamilnadu22k: "Check today's rate",
+            lastUpdated: ""
+          });
+        }
+      } finally {
+        setGoldLoading(false);
+      }
+    };
+
+    // Web scraping fallback function
+    const fetchGoldPricesFromWebPage = async () => {
+      // In a real app, you would use a proxy server to scrape
+      // (Direct scraping from frontend violates CORS)
+      return {
+        india24k: "₹5,800/g (sample)",
+        india22k: "₹5,300/g (sample)",
+        tamilnadu24k: "₹6,000/g (sample)",
+        tamilnadu22k: "₹5,500/g (sample)",
+        lastUpdated: `${new Date().toLocaleTimeString()} (sample data)`
+      };
+    };
+
+    fetchGoldPrices();
+    const interval = setInterval(fetchGoldPrices, 30 * 60 * 1000); // 30 mins
+    return () => clearInterval(interval);
+  }, []);
+  // Fetch gold prices
+  // useEffect(() => {
+  //   const fetchGoldPrices = async () => {
+  //     try {
+  //       // Using GoldAPI.io with API key (replace with your actual API key)
+  //       const response = await fetch("https://www.goldapi.io/api/XAU/INR", {
+  //         headers: {
+  //           "x-access-token": "your-api-key-here", // Replace with your actual API key
+  //           "Content-Type": "application/json"
+  //         }
+  //       });
+
+  //       if (!response.ok) {
+  //         throw new Error("Failed to fetch gold prices");
+  //       }
+
+  //       const data = await response.json();
+
+  //       // GoldAPI.io returns price per troy ounce (31.1 grams), so we convert to per gram
+  //       const pricePerGram = data.price / 31.1;
+  //       const tnPremium = 1.04; // 4% premium for Tamil Nadu
+
+  //       setGoldPrices({
+  //         india24k: `₹${Math.round(pricePerGram)}/g`,
+  //         india22k: `₹${Math.round(pricePerGram * 0.916)}/g`,
+  //         tamilnadu24k: `₹${Math.round(pricePerGram * tnPremium)}/g`,
+  //         tamilnadu22k: `₹${Math.round(pricePerGram * 0.916 * tnPremium)}/g`,
+  //         lastUpdated: new Date().toLocaleTimeString()
+  //       });
+
+  //       setGoldLoading(false);
+  //     } catch (error) {
+  //       console.error("Error fetching gold prices:", error);
+  //       // Fallback to scraping or alternative API
+  //       fetchGoldPricesFallback();
+  //     }
+  //   };
+
+  //   // Fallback method if primary API fails
+  //   const fetchGoldPricesFallback = async () => {
+  //     try {
+  //       // Alternative API - GoldPrice.org JSON API
+  //       const response = await fetch(
+  //         "https://data-asg.goldprice.org/dbXRates/INR"
+  //       );
+  //       const data = await response.json();
+
+  //       // This API returns price per troy ounce (31.1 grams)
+  //       const pricePerGram = data.items[0].xauPrice / 31.1;
+  //       const tnPremium = 1.04; // 4% premium for Tamil Nadu
+
+  //       setGoldPrices({
+  //         india24k: `₹${Math.round(pricePerGram)}/g`,
+  //         india22k: `₹${Math.round(pricePerGram * 0.916)}/g`,
+  //         tamilnadu24k: `₹${Math.round(pricePerGram * tnPremium)}/g`,
+  //         tamilnadu22k: `₹${Math.round(pricePerGram * 0.916 * tnPremium)}/g`,
+  //         lastUpdated: `${new Date().toLocaleTimeString()} (fallback)`
+  //       });
+  //     } catch (fallbackError) {
+  //       console.error("Fallback API also failed:", fallbackError);
+  //       setGoldPrices({
+  //         india24k: "Price unavailable",
+  //         india22k: "Price unavailable",
+  //         tamilnadu24k: "Price unavailable",
+  //         tamilnadu22k: "Price unavailable",
+  //         lastUpdated: ""
+  //       });
+  //     } finally {
+  //       setGoldLoading(false);
+  //     }
+  //   };
+
+  //   fetchGoldPrices();
+  //   // Update every 5 minutes
+  //   const interval = setInterval(fetchGoldPrices, 5 * 60 * 1000);
+  //   return () => clearInterval(interval);
+  // }, []);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -46,12 +194,11 @@ const Home = () => {
         setLoading(true);
         setError(null);
 
-        // First try to use local data if available
         if (localData && localData.length > 0) {
           console.log("Using local data");
           const combinedArticles = localData.map((article) => ({
             ...article,
-            category: article.category || "Technology", // default category
+            category: article.category || "Technology",
             tags: article.tags || [],
             trending: article.trending || false,
             status: article.status !== false
@@ -59,7 +206,6 @@ const Home = () => {
 
           setAllArticles(combinedArticles);
 
-          // Extract trending tags from local data
           const activeArticles = combinedArticles.filter(
             (a) => a.status !== false
           );
@@ -72,7 +218,6 @@ const Home = () => {
           console.log("Using API data");
         }
 
-        // If no local data, fetch from API
         console.log("Fetching from API");
         const promises = categories.map(async (category) => {
           const response = await fetch(
@@ -87,9 +232,7 @@ const Home = () => {
 
         const results = await Promise.all(promises);
 
-        // Combine all articles into one array
         const combinedArticles = results.flatMap((data, index) => {
-          // Handle different response structures
           let articles = [];
           if (Array.isArray(data)) {
             articles = data;
@@ -101,7 +244,6 @@ const Home = () => {
             articles = data.items;
           }
 
-          // Add category if not present
           return articles.map((article) => ({
             ...article,
             category: article.category || categories[index],
@@ -115,7 +257,6 @@ const Home = () => {
 
         setAllArticles(combinedArticles);
 
-        // Extract trending tags
         const activeArticles = combinedArticles.filter(
           (a) => a.status !== false
         );
@@ -288,7 +429,7 @@ const Home = () => {
     <div className={`home-container ${categoryName ? "category-view" : ""}`}>
       <AdSenseLoader />
 
-      {/* Add the breaking news marquee here */}
+      {/* Breaking news marquee */}
       <div className="breaking-news-container">
         <div className="breaking-news-label">BREAKING:</div>
         <marquee
@@ -298,7 +439,6 @@ const Home = () => {
         >
           {categories
             .map((category) => {
-              // Find the first trending article in this category
               const trendingArticle = allArticles.find(
                 (article) =>
                   article.category === category &&
@@ -405,7 +545,6 @@ const Home = () => {
                   </div>
                 </section>
 
-                {/* First Content Ad - After Featured Articles */}
                 <div className="content-ad">
                   <AdSenseAd
                     slotId="mid_content_ad"
@@ -435,7 +574,6 @@ const Home = () => {
                   </div>
                 </section>
 
-                {/* Mobile-Specific Ad */}
                 {isMobile && (
                   <div className="mobile-ad">
                     <AdSenseAd
@@ -475,7 +613,6 @@ const Home = () => {
               )
             )}
 
-            {/* Footer Ad */}
             <div className="footer-ad">
               <AdSenseAd
                 slotId="footer_ad"
@@ -488,6 +625,36 @@ const Home = () => {
 
           {!categoryName && !isMobile && (
             <aside className="sidebar">
+              {/* Gold Price Card */}
+              <div className="gold-price-card">
+                <h3>🪙 Live Gold Rates</h3>
+                {goldLoading ? (
+                  <div className="gold-loading">Loading gold prices...</div>
+                ) : (
+                  <>
+                    <div className="gold-rate">
+                      <span>India 24K:</span>
+                      <strong>{goldPrices.india24k}</strong>
+                    </div>
+                    <div className="gold-rate">
+                      <span>India 22K:</span>
+                      <strong>{goldPrices.india22k}</strong>
+                    </div>
+                    <div className="gold-rate">
+                      <span>Tamil Nadu 24K:</span>
+                      <strong>{goldPrices.tamilnadu24k}</strong>
+                    </div>
+                    <div className="gold-rate">
+                      <span>Tamil Nadu 22K:</span>
+                      <strong>{goldPrices.tamilnadu22k}</strong>
+                    </div>
+                    <div className="gold-update-time">
+                      Updated: {goldPrices.lastUpdated}
+                    </div>
+                  </>
+                )}
+              </div>
+
               <TrendingTags
                 tags={trendingTags}
                 selectedTag={selectedTag}
@@ -501,6 +668,37 @@ const Home = () => {
                 <p className="ad-label">Advertisement</p>
               </div>
             </aside>
+          )}
+
+          {/* Mobile Gold Price Display */}
+          {isMobile && (
+            <div className="mobile-gold-price">
+              <h3>Indian Live Gold Rates</h3>
+              <div className="mobile-gold-rates">
+                <div>
+                  <span>24K:</span>
+                  <strong>{goldPrices.india24k}</strong>
+                </div>
+                <div>
+                  <span>22K:</span>
+                  <strong>{goldPrices.india22k}</strong>
+                </div>
+              </div>
+              <h3>Tamil Nadu Live Gold Rates</h3>
+              <div className="mobile-gold-rates">
+                <div>
+                  <span>24K:</span>
+                  <strong>{goldPrices.tamilnadu24k}</strong>
+                </div>
+                <div>
+                  <span>22K:</span>
+                  <strong>{goldPrices.tamilnadu22k}</strong>
+                </div>
+              </div>
+              <div className="gold-update-time">
+                Updated: {goldPrices.lastUpdated}
+              </div>
+            </div>
           )}
         </main>
       </div>

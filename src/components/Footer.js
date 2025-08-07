@@ -8,7 +8,12 @@ const Footer = () => {
       <div className="footer-main">
         <div className="container">
           <div className="footer-column">
-            <h3>TodayTalks</h3>
+            {/* <h3>TodayTalks</h3> */}
+            <img
+              src="/images/todaytalks.png"
+              alt="nothing"
+              className="ttlogo"
+            />
             <p>
               Your trusted source for the latest news and in-depth reporting
               from around the world.

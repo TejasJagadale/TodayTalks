@@ -638,9 +638,6 @@ img {
 }
 
 /* Sidebar */
-.sidebar {
-  display: none;
-}
 
 .sidebar-section {
   background-color: var(--card-bg);
@@ -1184,6 +1181,116 @@ img {
   z-index: 1;
 }
 
+/* Gold Price Styles */
+/* Optional: Add shimmer to the entire card */
+.gold-price-card {
+  background: #fff9e6;
+  border: 1px solid #ffd700;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  animation: cardShimmer 5s infinite linear;
+  background: linear-gradient(90deg, #fff9e6 0%, #ffe89b 50%, #fff9e6 100%);
+  background-size: 200% 100%;
+}
+
+@keyframes cardShimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.gold-price-card h3 {
+  margin-top: 0;
+  color: #d4af37;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  animation: goldBlink 2s infinite alternate;
+}
+
+@keyframes goldBlink {
+  0% {
+    color: #d4af37;
+    text-shadow: 0 0 5px rgba(212, 175, 55, 0.5);
+  }
+  50% {
+    color: #ffd700;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+  }
+  100% {
+    color: #f9d423;
+    text-shadow: 0 0 7px rgba(249, 212, 35, 0.6);
+  }
+}
+
+.gold-rate {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed #eee;
+}
+
+.gold-rate:last-child {
+  border-bottom: none;
+}
+
+.gold-update-time {
+  font-size: 0.8rem;
+  color: #666;
+  text-align: right;
+  margin-top: 10px;
+}
+
+.gold-loading {
+  text-align: center;
+  padding: 10px;
+  color: #666;
+}
+
+/* Mobile Gold Price */
+.mobile-gold-price {
+  background: #fff9e6;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 8px;
+  border: 1px solid #ffd700;
+}
+
+.mobile-gold-price h3 {
+  margin-top: 0;
+  color: #d4af37;
+  font-size: 1.1rem;
+}
+
+.mobile-gold-rates {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.mobile-gold-rates div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile-gold-rates span {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.mobile-gold-rates strong {
+  font-size: 1.1rem;
+  color: #333;
+}
+
 /* ===== MOBILE RESPONSIVENESS ===== */
 @media (max-width: 992px) {
   .featured-article.large {
@@ -1200,6 +1307,33 @@ img {
   .header-content {
     flex-direction: column;
   }
+  .mobile-gold-price {
+    background: #fff9e6;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 8px;
+    border: 1px solid #ffd700;
+    line-height: 30px;
+    text-align: center;
+    animation: borderGlow 3s infinite alternate;
+  }
+
+  @keyframes borderGlow {
+    from {
+      border-color: #fbf5cf;
+      box-shadow: 0 0 5px rgba(255, 240, 158, 0.737);
+    }
+    to {
+      border-color: #ffcc00;
+      box-shadow: 0 0 15px rgba(255, 204, 0, 0.7);
+    }
+  }
+
+  .mobile-gold-rates {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0px;
+  }
 
   .featured-grid {
     grid-template-columns: 1fr;
@@ -1211,8 +1345,13 @@ img {
 }
 
 @media (max-width: 768px) {
+  .home-content {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0.5rem;
+  }
   .content-container {
-    padding: 2rem 0;
+    padding: 0.4rem 0;
     width: 95%;
     display: flex;
     flex-direction: column;
