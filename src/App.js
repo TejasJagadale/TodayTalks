@@ -13,7 +13,7 @@ import New from "./components/New";
 import CategoryNav from "./components/CategoryNav.js";
 import PrivacyPolicy from "./components/PrivacyPolicy.js";
 import TermsAndConditions from "./components/TermsandConditions.js";
-// import AboutUs from "./pages/AboutUs.js";
+import AboutUs from "./pages/AboutUs.js";
 import Contact from "./pages/Contact.js";
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -38,7 +38,7 @@ function App() {
           <Route path="/category/:category" element={<CategoryNav />} />
           <Route path="/news" element={<New />} />
           <Route path="/privacypolicy" element={<PrivacyPolicy />} />
-          {/* <Route path="/about" element={<AboutUs />} /> */}
+          <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/termsandconditions" element={<TermsAndConditions />} />
         </Routes>
